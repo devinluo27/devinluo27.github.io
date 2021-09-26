@@ -1,0 +1,413 @@
+<!doctype html>
+<html>
+
+<head>
+    <title> Yunhao Luo @SUSTech </title>
+    <meta charset="utf-8">
+    <meta name="Yunhao Luo's Homepage" http-equiv="Content-Type" content="Yunhao Luo's Homepage">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito" />
+    <link href="./hover.css" rel="stylesheet">
+
+    <style type="text/css">
+        li div {
+            text-align: right;
+        }
+        
+        li div span {
+            float: left;
+        }
+        
+        div li p {
+            display: inline;
+        }
+        
+        .publogo {
+            margin-right: 20px;
+        }
+        
+        .publication {
+            padding-left: 10px;
+            padding-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .publication strong a {
+            color: #000;
+            text-decoration: none;
+        }
+        
+        .publication strong a:hover {
+            text-decoration: underline;
+        }
+        
+        .publication .links a {
+            margin-right: 15px;
+        }
+        
+        .press {
+            display: inline-block;
+            padding: 5px;
+            height: 70px;
+        }
+        
+        .press a img {
+            border: 3px solid #fff;
+            /*border-ra truncated 1065bytes...*/
+        }
+        
+        .new {
+            color: #D10C15;
+            font-weight: bold;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150364978-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-150364978-1');
+    </script>
+
+    <script type="text/javascript" language="JavaScript">
+        var imgs = ['"pics/luo1.jpg"',
+            //'"pics/luo2.jpg"',
+            '"pics/luo3.jpg"',
+            //'"pics/luo5s.jpg"',
+            '"pics/luo6.jpg"',
+            //'"pics/headshot_paloalto.jpg"',
+            //'"pics/headshot_nyc.jpg"',
+            //'"pics/headshot_stanford.jpg"'
+        ];
+        var num_imgs = imgs.length;
+
+        start = '<img src=';
+        end = ' id="me" height="30%" itemprop="photo" class="float-left img-fluid">';
+
+        function printImage() {
+            var rand_int = Math.floor(Math.random() * num_imgs);
+            document.write(start + imgs[rand_int] + end);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="container">
+            <div>
+                <div class="row mt-3">
+                    <br>
+                    <!--Empty; for layout only. -->
+                </div>
+                <div class="row mt-0">
+                    <div class="col-2 col-sm-2 col-md-2 col-lg-2 p-0 pl-0 pl-sm-4 offset-xl-1 col-xl-3" height='50%'>
+                        <script type="text/javascript" language="JavaScript">
+                            printImage();
+                        </script>
+                    </div>
+
+                    <div class="col-10 col-sm-10 col-md-10 col-lg-10 pl-3 pr-1 px-sm-4 pl-md-5 pt-1 pb-1 pb-sm-1 pt-sm-1 nameplate col-xl-7 offset-xl-0">
+                        <h2><span itemprop="name">Yunhao (Devin) Luo &#x1F981</span></h2>
+                        <p class="my-0">CS Junior student at SUSTech<br>11813221 [at] mail.sustech.edu.cn<br> Google Scholar / <a href="https://www.linkedin.com/in/yunhao-luo-5159751a4/">LinkedIn</a> / <a href="https://github.com/aloofluo">GitHub</a> /
+                            <a href="https://twitter.com/AloofLuo">Twitter</a>
+                        </p>
+                        <br>
+                        <p>
+                            Hi! I'm a Junior student at <a href="https://www.sustech.edu.cn/">Southern University of Science and Technology</a>, where I was fortunate enough to work with
+                            <a href="https://faculty.sustech.edu.cn/zhangjg/en/">Prof. Jianguo Zhang</a> in SUSTech CVIP Group. Now, I am mainly working on Adversarial Attack and Uncertainty in Medical Image Processing. Before that, I finished my high
+                            school in <a href="http://www.hsfz.net.cn/homepage/index.jsp">The Affiliated High School of SCNU</a> in Guangzhou.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- News -->
+    <div class="container">
+        <div>
+            <div class="row mt-3">
+                <div class="col-12 pt-3  px-4  bubble offset-xl-1 col-xl-10">
+                    <h4>News</h4>
+                    <ul>
+                        <!-- <li>
+                            <p> 2021.05 I am actively looking for supervisors for my master studies. &#x1F5DE </p>
+                        </li> -->
+                        <!-- <li>
+                            <p> 2021.05 We are working on a survey. &#x1F5DE </p>
+                        </li> -->
+                        <li>
+                            <p> 2021.06 I won the Honerable Mentioned in 2021 China Operating System Contest, the final will be held in Augest. </p>
+                        </li>
+                        <li>
+                            <p> 2021.05 I am now working on one conference paper and one survey! </p>
+                        </li>
+                        <li>
+                            <p> 2021.04 I receive Honorable Mention Award in MCM 2021 with Yitian and Chongyang. </p>
+                        </li>
+                        <!-- <li> <p> <span class="new"> [new] </span> 2020.04 I'm a TA for <a href="http://cs231n.stanford.edu">CS231n</a> in Spring 2020. </p> </li> -->
+                        <li>
+                            <p> 2021.03 Our online platform for SQL scripts judging in CS307 comes online in SUSTech &#x1F5A5 </p>
+                        </li>
+                        <!-- <li>
+                            <p> 2021.02 One <a href="#STGraph20">paper</a> submitted to <a href="https://www.miccai2021.org/">MICCAI 2021</a>. </p>
+                        </li> -->
+
+                        <li>
+                            <p> 2021.02 I got <a href="https://www.wechat.com/en/">WeChat</a> intern offer as a SDE in 2021 Summer.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Publications -->
+    <div class="container">
+        <div>
+            <div class="row mb-3">
+                <div class="col-12 px-4 bubble offset-xl-1 col-xl-11">
+                    <br>
+                    <h4>Publications</h4>
+                    <div class="publication media">
+                        <div class="media-body">
+                            <p id="STGraph20">
+                                <strong>Bayesian Attention for Inter-Rater Uncertainty Quantification in Medical Image Segmentation</strong><br>
+                                <em>To be submitted to TMI </em>2021.<br>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="publication media">
+                        <div class="media-body">
+                            <p id="STGraph20">
+                                <strong>Threat of adversarial examples on medicalimage analysis: A survey</strong><br>
+                                <em>To be submitted </em>in 2021.<br>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- <div class="publication media">
+                        <img src="pics/stgraph.jpg" class="publogo img-fluid float-left rounded g" width="150">
+                        <div class="media-body">
+                            <p id="STGraph20">
+                                <strong>Spatio-Temporal Graph for Video Captioning with Knowledge Distillation</strong><br>
+                                <strong>Boxiao Pan</strong>, Haoye Cai, <a href="http://ai.stanford.edu/~dahuang/">De-An Huang</a>, Kuan-Hui Lee, Adrien Gaidon, Ehsan Adeli, Juan Carlos Niebles<br>
+                                <em>Conference on Computer Vision and Pattern Recognition (CVPR), </em>2020.<br>
+                                <span class="links">
+					<a href="https://arxiv.org/abs/2003.13942">Paper</a>
+					<a href="https://github.com/StanfordVL/STGraph">Code</a>
+					<a href="https://youtu.be/QxHttaZF_Xc">Video</a>
+					<a href="docs/cvpr2020/slides.pptx">Slides</a>
+					<a href="docs/cvpr2020/poster.pdf">Poster</a>
+				</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="publication media col-xl-11">
+                        <img src="pics/aaai_2020_tcon.png" class="publogo img-fluid float-left rounded g" width="150">
+                        <div class="media-body">
+                            <p>
+                                <strong>Adversarial Cross-Domain Action Recognition with Co-Attention</strong><br>
+                                <strong>Boxiao Pan*</strong>, <a href="https://caozhangjie.github.io">Zhangjie Cao</a>*, <a href="http://stanford.edu/~eadeli/">Ehsan Adeli</a>, Juan Carlos Niebles<br>
+                                <em> AAAI Conference on Artificial Intelligence (AAAI), </em>2020. (<strong>Oral Presentation</strong>) <br>
+                                <span class="links">
+				    <a href="http://arxiv.org/abs/1912.10405">Paper</a>
+			      	    <a href="docs/aaai2020/slides.pptx">Slides</a>
+				    <a href="docs/aaai2020/poster.pdf">Poster</a>
+				</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="publication media col-xl-11">
+                        <img src="pics/pakdd_2018.jpg" class="publogo img-fluid float-left rounded g" width="150">
+                        <div class="media-body">
+                            <p>
+                                <strong>A Novel LSTM-Based Daily Airline Demand Forecasting Method Using Vertical And Horizontal Time Series</strong><br>
+                                <strong>Boxiao Pan</strong>, Dongfeng Yuan, Weiwei Sun, Cong Liang, Dongyang Li<br>
+                                <em> Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD) Workshop, </em>2018.<br>
+                                <span class="links"><a href="https://link.springer.com/chapter/10.1007/978-3-030-04503-6_17">Paper</a></span>
+                            </p>
+                        </div>
+                    </div> -->
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Teaching -->
+    <div class="container">
+        <div>
+            <div class="row mb-3">
+                <div class="col-12 pt-3  px-4 bubble offset-xl-1 col-xl-10">
+                    <h4>Teaching</h4>
+                    <p>
+                        <strong>SUSTech CS205 C/C++</strong>: During Autumn 2020, I worked as Head Teaching Assistant in C/C++ Programing held by <a href="https://faculty.sustech.edu.cn/yusq/en/">Prof. Shiqi Yu</a>. My job is to hold lab sessions and
+                        virtual office hours, design and rate students' assignments.
+                    </p>
+
+                    <p>
+                        <strong>SUSTech CS307 Database</strong>: For Spring 2021, I serve as a TA for Database course. I am in charge of maintaining the online homework submission platform.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="container">
+        <div>
+            <div class="row mb-3">
+                <div class="col-12 pt-3  px-4 bubble offset-xl-1 col-xl-10">
+                    <h4>Projects</h4>
+
+
+                    <!-- project start point -->
+
+                    <div class="publication media">
+                        <img src="pics/huawei.png" class="publogo img-fluid float-left rounded g" width="150" <="" a="">
+                        <div class="media-body">
+                            <p>
+                                <strong>SafeAI: Robustness of Medical AI Model under Adversarial Attack</strong>
+                                <br> Online defense strategy with Bayesian Neural Network (BNN).
+                                <br> Funded by Huawei RMS Lab.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="publication media">
+                        <img src="pics/pro_att_unet.jpg" class="publogo img-fluid float-left rounded g" width="150" <="" a="">
+                        <div class="media-body">
+                            <p>
+                                <strong>Probabilistic Attention for Inter-Rater Uncertainty Quantification in Medical Image Segmentation </strong>
+                                <br> Enhance U-Net by One Encoder and Multiple Decoder Structure with Probabilistic Attention Gate.
+                                <br> Paper submitted to MICCAI 2021 and Sponsored by Guangdong Pandeng Innovation Fund (广东省攀登计划).
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="publication media">
+                        <img src="pics/sql_platform.png" class="publogo img-fluid float-left rounded g" width="150" <="" a="">
+                        <div class="media-body">
+                            <p>
+                                <strong>SQL Script Online Judge Platform </strong>
+                                <br> A website for Homework Submission and Rating in SUSTech CS307 Database course.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="publication media">
+                        <div class="media-body">
+                            <img src="pics/cs230.jpg" class="publogo img-fluid float-left rounded g" width="120" <="" a="">
+                            <p><strong>Tackling Occlusion in Person Re-identification</strong><br> CS230: Deep Learning<br> with Soutik Chakraborty and Pragya Mishra. <br>
+                                <span class="links">
+			      <a href="docs/cs230_report.pdf">Report</a>
+                              <a href="docs/cs230_poster.pdf">Poster</a>
+                              </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="publication media">
+                        <div class="media-body">
+                            <img src="pics/cs224n.png" class="publogo img-fluid float-left rounded g" width="120" <="" a="">
+                            <p><strong>Question Answering on SQuAD2.0</strong><br> CS224n: Natural Language Processing with Deep Learning<br> with Gael Colas and Shervine Amidi. <br>
+                                <span class="links">
+			      <a href="docs/cs224n_report.pdf">Report</a>
+                              <a href="docs/cs224n_poster.pdf">Poster</a>
+                              </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="publication media">
+                        <div class="media-body">
+                            <img src="pics/cs229.jpg" class="publogo img-fluid float-left rounded g" width="120" <="" a="">
+                            <p><strong>Predicting NYC Taxi Fares, Trip Distance, and Activity</strong><br> CS229: Machine Learning<br> with Paul Jolly and Varun Nambiar. <br>
+                                <span class="links">
+			      <a href="docs/cs229_report.pdf">Report</a>
+                              <a href="docs/cs229_poster.pdf">Poster</a>
+                              </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="publication media">
+                        <div class="media-body">
+                            <img src="pics/lollipop.png" class="publogo img-fluid float-left rounded g" width="120" <="" a="">
+                            <p><strong>Lollipop: Mobile App for South China University of Technology</strong><br> with 100steps Student Association.<br>
+                            </p>
+                        </div>
+                    </div> -->
+
+
+
+                    <!-- project end point -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Misc -->
+    <div class="container">
+        <div>
+            <div class="row mt-3 mb-3">
+                <div class="col-12 pt-3  px-4 bubble offset-xl-1 col-xl-10" id='misc'>
+                    <h4>Misc</h4>
+                    <ul>
+                        <li>
+                            <p> I'm from <a href="https://goo.gl/maps/LN9VZD6o18X4vyuC7">Guangzhou</a>, a lovely city in South China with tons of fantastic food. </p>
+                        </li>
+                        <li>
+                            <p> I am keen at playing music &#x1F3b5 and I started to play <a href="https://en.wikipedia.org/wiki/Bamboo_flute">Bamboo Flute </a> when I was eight :P. </p>
+                        </li>
+                        <li>
+                            <p> I enjoy playing basketball &#x1F3C0 and I am also a member of college varsity team. In high school, our team won the fifth place in 2016 Nike League in GZ.</p>
+                        </li>
+                        <li>
+                            <p> I am still polishing my English. Now, I score 103 in TOEFL and 324 in GRE.</p>
+                        </li>
+                        <!-- <li>
+                            <p> I love traveling. I maintain a <a href="https://goo.gl/maps/kFddcxmx5UCtaVD76">Places I've Visited</a> map. Looking forward to exploring the rest of the world! </p>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <div style="width: 200px; margin-left: 5%;">
+        <br/>
+        <br/>
+        <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=m&d=pcCUE7o3Z2-Zorc1m0-XP1k1DtR2Ul8xnNTfSwhOfqw"></script>
+    </div>
+    <!-- text-indent:3em;  -->
+    <div style="margin-left: 5%;" id='modify_log'>
+        <br/>
+        <p>Last updated: Aug 16th, 2021</p>
+        <br/>
+        <br/>
+    </div>
+
+</body>
+
+</html>
