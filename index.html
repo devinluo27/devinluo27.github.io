@@ -95,6 +95,16 @@
             var rand_int = Math.floor(Math.random() * num_imgs);
             document.write(start + imgs[rand_int] + end);
         }
+        // Yunhao
+        function toggleContent(btn_id, content_id, text_expand, text_back) {
+            if (document.getElementById(content_id).style.display == 'block') {
+                document.getElementById(content_id).style.display = 'none';
+                document.getElementById(btn_id).innerHTML = text_back;
+            } else {
+                document.getElementById(content_id).style.display = 'block';
+                document.getElementById(btn_id).innerHTML = text_expand;
+            }
+        }
     </script>
 </head>
 
@@ -181,12 +191,15 @@
                     <h4>Papers</h4>
                     <div class="publication media">
                         <div class="media-body">
-                            <p id="STGraph20">
-                                <strong>Bayesian Attention for Inter-Rater Uncertainty Quantification in Medical Image Segmentation</strong><br> Qingqiao Hu, Hao Wang, Jing Luo, <strong>Yunhao Luo,</strong> <a href="https://scholar.google.com/citations?user=VpM-3NwAAAAJ&hl=en">Hongwei Li</a>,
+                            <p id="uncertainty">
+                                <strong>Bayesian Attention for Inter-Rater Uncertainty Quantification in Medical Image Segmentation</strong><br> Qingqiao Hu*, Hao Wang*, Jing Luo, <strong>Yunhao Luo,</strong> <a href="https://scholar.google.com/citations?user=VpM-3NwAAAAJ&hl=en">Hongwei Li</a>,
                                 Jianguo Zhang<br>
                                 <em>To be submitted to TMI </em>2021.<br>
                                 <span class="links">
-                                    <a href="">Abstract</a>
+                                    <a href="javascript:toggleContent('btn_id_1', 'content_id_1', 'Collapse', 'Abstract')" id="btn_id_1">Abstract</a><br/>
+                                    <div class="abstract" id="content_id_1">
+                                        Semantic segmentation of regions of interest in medical images is inherently ambiguous. For example, the boundary of a structure may not be clearly visible, and different experts may have varying styles or levels of expertise. In this work, we present a simple yet effective framework to estimate inter-rater uncertainty in medical image segmentation tasks. The key idea is to model each rater’s uncertainty in several separated decoders and to introduce probabilistic attention to learn their annotation distributions. First, we demonstrate the motivation of the one-encoder-m-decoder architecture choice compared to the traditional one-encoder-one-decoder one. We further introduce a probabilistic attention gate module to capture the underlying segmentation distribution. We performed extensive experiments on both synthetic and real-world datasets. Our method outperforms state-of-the-art methods in five tasks (out of seven) under two evaluation metrics considering two aspects of uncertainty modeling. 
+                                    </div>
                                 </span>
                             </p>
                         </div>
@@ -200,7 +213,10 @@
                                 <br>
                                 <!-- <em>In progress</em> for submission in early 2022.<br> -->
                                 <span class="links">
-                                    <a href="">Abstract</a>
+                                    <a href="javascript:toggleContent('btn_id_2', 'content_id_2', 'Collapse', 'Abstract')" id="btn_id_2">Abstract</a><br/>
+                                    <div class="abstract" id="content_id_2">
+                                        Medical image analysis is an important and practical AI application. To prevent medical negligence caused by AI, users always place strict requirements for the robustness of medical AI systems. Therefore, it is of great significance to research how AI systems defend against adversarial examples. In this project, we firstly build a unique adversarial example dataset based on International Skin Imaging Collaboration (ISIC) 2018 Dataset. Secondly, we design an online BNN-based defensive training strategy that can significantly increase the model’s accuracy under malicious perturbation. Thirdly, we propose an efficient metric of adversarial robustness called tournament matrix and devise an attention-guided adversarial attack method to generate stealthy and effective. Finally, we have done some preliminary experiments on Visual Transformers. 
+                                    </div>
                                 </span>
                             </p>
                         </div>
@@ -208,11 +224,14 @@
 
                     <div class="publication media">
                         <div class="media-body">
-                            <p id="STGraph20">
+                            <p id="survey_en">
                                 <strong>Threat of adversarial examples on medicalimage analysis: A survey</strong><br> Chenxu Hu, <strong>Yunhao Luo,</strong> Shuqi Liu, Tianjun Huang, Zheng Hu, Jianguo Zhang <br>
                                 <em>In progress</em> for submission in early 2022.<br>
                                 <span class="links">
-                                    <a href="">Abstract</a>
+                                    <a href="javascript:toggleContent('btn_id_3', 'content_id_3', 'Collapse', 'Abstract')" id="btn_id_3">Abstract</a><br/>
+                                    <div class="abstract" id="content_id_3">
+                                        Recently, deep learning has rapidly developed in medical image classification, denoising, reconstruction, segmentation, and detection. However, there are still many unsettled issues in processing adversarial examples. We review the history of adversarial attacks, analyze the difference between medical and natural images, and introduce defense strategies. This review provides a broad overview of recent literature on medical adversarial examples, discusses shortcomings and opportunities of related methods, and elaborates potential future work. 
+                                    </div>
                                 </span>
                             </p>
                         </div>
@@ -302,10 +321,21 @@
             <div class="row mb-3">
                 <div class="col-12 pt-3  px-4 bubble offset-xl-1 col-xl-10">
                     <h4>Experience</h4>
+                    <!-- <p style="text-indent: 0px;margin-bottom:0%"> -->
                     <p>
-                        <strong>University of California, Berkeley</strong><br> One semester exchange at EECS Division, Spring 2020 <br> Core courses: <br> CS 170 Efficient Algorithm and Intractable Problems;
+                        <strong>University of California, Berkeley</strong>
+                        <br>One semester exchange at EECS Division, Spring 2020
+                        <br> Core courses: <br> CS 170 Efficient Algorithm and Intractable Problems;
                         <br> CS 61C Great Ideas in Computer Architecture (Machine Structures);
                         <br> MATH 55 Discrete Mathematics
+                        <!-- order: up right bottom left -->
+                        <!-- <div style="margin:0 0 0 15px; padding:0%">
+                            <p style="margin:0 0 0 0; padding:0%">
+                                One semester exchange at EECS Division, Spring 2020 <br> Core courses: <br> CS 170 Efficient Algorithm and Intractable Problems;
+                                <br> CS 61C Great Ideas in Computer Architecture (Machine Structures);
+                                <br> MATH 55 Discrete Mathematics
+                            </p>
+                        </div> -->
                     </p>
                     <p>
                         <strong>National University of Singapore</strong>
@@ -435,11 +465,11 @@
                             We hold
                             <a href="https://newshub.sustech.edu.cn/html/201906/15992.html">amazing concerts </a>frequently. &#x2B07
                             <br>
-                            <img src="pics/misc/Zhiren-orchestra.jpg" class="publogo img-fluid left  rounded g" width="300" <="" a=""><br><br>
+                            <img src="pics/misc/Zhiren-orchestra.jpg" class="publogo img-fluid left  rounded g" width="300" a=""><br><br>
                         </li>
                         <li>
                             <p> I enjoy playing basketball &#x1F3C0 and I am also a member of college varsity team. In high school, our team won the fifth place in 2016 Nike League Championship, Guangzhou.</p><br>
-                            <img src="pics/misc/nike-league.jpg" class="publogo img-fluid left  rounded g" width="300" <="" a=""><br><br>
+                            <img src="pics/misc/nike-league.jpg" class="publogo img-fluid left  rounded g" width="300" a=""><br><br>
                         </li>
                         <li>
                             <p> I am a photography enthusiast &#x1F4F8. I was a photographer and administrative assistant at the SUSTech Student Press from 2018 to 2020.</p>
