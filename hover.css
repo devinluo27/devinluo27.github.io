@@ -174,3 +174,23 @@ div.abstract {
     text-align: justify;
     width: auto;
 }
+
+p.shifted {
+    margin-left: 30px;
+    margin-top: -15px;
+
+}
+
+div.shifted {
+    margin-left: 30px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+
+    padding-top: -20px;
+}
+
+ul.less-margin {
+    /* margin: -20px; */
+    margin-top: -15px;
+    margin-bottom: 0px;
+}

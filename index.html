@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito" />
     <link href="./hover.css" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="150x150" href="sustech-logo.png">
+    <!-- <link rel="icon" type="image/png" sizes="150x150" href="pics/sustech-logo.png"> -->
+    <link rel="icon" type="image/png" sizes="150x150" href="pics/brown-log.png">
+
     <style type="text/css">
         li div {
             text-align: right;
@@ -84,7 +86,7 @@
             // '"pics/luo3.jpg"',
             //'"pics/luo5s.jpg"',
             // '"pics/luo6.jpg"',
-            '"pics/luo7.jpg"',
+            '"pics/luo9.jpg"',
             //'"pics/headshot_paloalto.jpg"',
             //'"pics/headshot_nyc.jpg"',
             //'"pics/headshot_stanford.jpg"'
@@ -92,7 +94,7 @@
         var num_imgs = imgs.length;
 
         start = '<img src=';
-        end = ' id="me" height="30" itemprop="photo" class="float-left img-fluid">';
+        end = ' id="me" height="20" itemprop="photo" class="float-left img-fluid">';
 
         function printImage() {
             var rand_int = Math.floor(Math.random() * num_imgs);
@@ -133,9 +135,8 @@
                         </p>
                         <br>
                         <p style="text-align: justify;">
-                            Hello, I am a first year Master student at Brown. I obtained my B.E. from <a href="https://www.sustech.edu.cn/">Southern University of Science and Technology (SUSTech)</a>. 
-                            I strive to build general AI agents that are applicable to multiple modalities with trusty performance.
-                            Currently, I primarily focus on computer vision for a start.
+                            Hello, I am a first year Master student at Brown. I received my B.E. from <a href="https://www.sustech.edu.cn/">Southern University of Science and Technology (SUSTech)</a>. 
+                            Currently, I focus on computer vision and strive to build general AI agents that are applicable to multiple modalities with trusty performance.
                             At SUSTech, I am fortunate to be advised by
                             <a href="https://faculty.sustech.edu.cn/zhangjg/en/">Prof. Jianguo Zhang</a> on medical image analysis and adversarial attack.
                             I also work with <a href="https://scholar.google.com/citations?user=SReb2csAAAAJ&hl=en">Prof. Lin Wang</a> at HKUST(GZ) primarily on semantic segmentation and domain generalization. Even before, I was an intern at Tencent WeChat Group.
@@ -156,6 +157,9 @@
                     <h4>News</h4>
                     <ul>
                         <li>
+                            <p> 2022.06 I won the SUSTech Distinguished Undergrad Thesis Award.</p>
+                        </li>
+                        <li>
                             <p> 2022.06 One survey paper uploaded to arxiv. "All One Needs to Know about Priors for Deep Image Restoration and Enhancement: A Survey" <a href="https://arxiv.org/abs/2206.02070">link</a> </p>
                         </li>
                         <!-- <li>
@@ -165,14 +169,14 @@
                             <p> 2021.10 I received the Second Class Award of SUSTech Merit Student Scholarship again.</p>
                         </li>
                         <li>
-                            <p> 2021.06 I won the Honerable Mentioned in 2021 China Operating System Contest (Kernel Track), the final will be held in Augest. </p>
+                            <p> 2021.06 I won the Honerable Mentioned in 2021 China Operating System Contest (Kernel Track). </p>
                         </li>
                         <!-- <li>
                             <p> 2021.05 I am now working on one conference paper and one survey! </p>
                         </li> -->
-                        <li>
-                            <p> 2021.04 I received Honorable Mention Award in MCM 2021 with Yitian and Chongyang. </p>
-                        </li>
+                        <!-- <li> -->
+                            <!-- <p> 2021.04 I received Honorable Mention Award in MCM 2021 with Yitian and Chongyang. </p> -->
+                        <!-- </li> -->
                         <!-- <li> <p> <span class="new"> [new] </span> 2020.04 I'm a TA for <a href="http://cs231n.stanford.edu">CS231n</a> in Spring 2020. </p> </li> -->
                         <li>
                             <p> 2021.03 Our online platform for SQL scripts judging in CS307 came online at SUSTech &#x1F5A5 </p>
@@ -198,14 +202,93 @@
                     <br>
                     <h4>Papers</h4>
 
+                    <!-- <div class="publication media">
+                        <div class="media-body">
+                            <a name='robustness'></a>
+                            <p id="p_robustness">
+                                <strong>Semi-Supervised Semantic Segmentation via Boosting Uncertainty on Unlabeled Data</strong> (submitted to ICLR 2023) <br>  Daoan Zhang*, <strong>Yunhao Luo*</strong>, Jie-Neng Chen, Lingyun Huang, Jianguo Zhang
+                                <br>
+                               
+                            </p>
+                        </div>
+                    </div>
                     <div class="publication media">
+                        <div class="media-body">
+                            <a name='robustness'></a>
+                            <p id="p_robustness">
+                                <strong>CNN-Transformer Collaborative Learning for Semantic Segmentation</strong> (submitted to AAAI 2023) 
+                                <br> Jinjing Zhu, <strong>Yunhao Luo</strong>, Xu Zheng, Lin Wang
+                                <br>
+                                
+                            </p>
+                        </div>
+                    </div> -->
+
+                    <div class="publication media">
+                        <div class="media-body">
+                            <a name='robustness'></a>
+                            <p id="p_robustness">
+                                <strong>Transformer-CNN Cohort: Semi-supervised Semantic Segmentation by the Best of Both Students</strong> 
+                                <br> <a href="https://arxiv.org/abs/2209.02178">[Paper]</a> 
+                                <br> Xu Zheng, <strong>Yunhao Luo</strong>, Chong Fu, Hao Wang, Lin Wang
+                                <br>
+                                <!-- <span class="links">
+                                    <a href="javascript:toggleContent('btn_id_2', 'content_id_2', 'Collapse', 'Abstract')" id="btn_id_2">Abstract</a><br/>
+                                    <div class="abstract" id="content_id_2">
+
+                                    </div>
+                                </span> -->
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="publication media">
+                        <div class="media-body">
+                            <a name='robustness'></a>
+                            <p id="p_robustness">
+                                <strong>Distilling Efficient Vision Transformers from CNNs for Segmentation: A Vision-Language Perspective</strong> 
+                                <br> Xu Zheng,  <strong>Yunhao Luo</strong>, Lin Wang
+                                <br>
+                                <!-- <span class="links">
+                                    <a href="javascript:toggleContent('btn_id_2', 'content_id_2', 'Collapse', 'Abstract')" id="btn_id_2">Abstract</a><br/>
+                                    <div class="abstract" id="content_id_2">
+
+                                    </div>
+                                </span> -->
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="publication media">
+                        <div class="media-body">
+                            <a name='robustness'></a>
+                            <p id="p_robustness">
+                                <strong>All One Needs to Know about Priors for Deep Image Restoration and Enhancement: A Survey</strong> (submitted to TPAMI)
+                                <br> <a href="https://arxiv.org/abs/2206.02070">[Paper]</a> 
+                                <br> Yunfan Lu*, Yiqi Lin*, Hao Wu*, <strong>Yunhao Luo</strong>, Xu Zheng, Lin Wang
+                                <br>
+                                <!-- <span class="links">
+                                    <a href="javascript:toggleContent('btn_id_2', 'content_id_2', 'Collapse', 'Abstract')" id="btn_id_2">Abstract</a><br/>
+                                    <div class="abstract" id="content_id_2">
+
+                                    </div>
+                                </span> -->
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <!-- <div class="publication media">
                         <div class="media-body">
                             <a name='robustness'></a>
                             <p id="p_robustness">
                                 <strong>Robustness of Deep Learning in Al Assisted Diagnosis: A Comprehensive Study</strong>, (in Chinese, final report for project SafeAI) <br> Chenxu Hu, <strong>Yunhao Luo,</strong> Shuqi Liu, Tianjun Huang, Jianguo
                                 Zhang
                                 <br>
-                                <!-- <em>In progress</em> for submission in early 2022.<br> -->
                                 <span class="links">
                                     <a href="javascript:toggleContent('btn_id_2', 'content_id_2', 'Collapse', 'Abstract')" id="btn_id_2">Abstract</a><br/>
                                     <div class="abstract" id="content_id_2">
@@ -214,10 +297,10 @@
                                 </span>
                             </p>
                         </div>
-                    </div>
+                    </div> -->
 
 
-                    <div class="publication media">
+                    <!-- <div class="publication media">
                         <div class="media-body">
                             <a name='uncertainty'></a>
                             <p id="p_uncertainty">
@@ -232,11 +315,11 @@
                                 </span>
                             </p>
                         </div>
-                    </div>
+                    </div> -->
 
 
 
-                    <div class="publication media">
+                    <!-- <div class="publication media">
                         <div class="media-body">
                             <a name='survey_en'></a>
                             <p id="p_survey_en">
@@ -250,7 +333,7 @@
                                 </span>
                             </p>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- <div class="publication media">
                         <img src="pics/stgraph.jpg" class="publogo img-fluid float-left rounded g" width="150">
@@ -310,20 +393,33 @@
     <div class="container">
         <div>
             <div class="row mb-3">
-                <div class="col-12 pt-3  px-4 bubble offset-xl-1 col-xl-10">
+                <div class="col-12 pt-3 px-4 bubble offset-xl-1 col-xl-10">
                     <h4>Work</h4>
                     <p>
                         <strong>Software Engineer Intern at Tencent, Wechat Group (WXG)</strong> &ensp; Jul 2021 - Sep 2021
-                        <br>I was responsible for the client-end software development for <a href="https://work.weixin.qq.com/">WeCom</a>.
+                        <ul class="less-margin">
+                            <li>
+                                <p > I was responsible for the client-end software development for <a href="https://work.weixin.qq.com/">WeCom</a>.</p>
+                            </li>
+                        </ul>
+                        <!-- <p class="shifted">I was responsible for the client-end software development for <a href="https://work.weixin.qq.com/">WeCom</a>.</p> -->
                     </p>
 
                     <p>
                         <strong>Product Manager Intern at Guangzhou Kangxu Tech Co., Ltd</strong> &ensp; Jan 2021 - Feb 2021
-                        <br> Kangxu Tech is a smart eHealth provider affiliated with the <a href=" http://www.kaxvip.cn/">Kangxu Gruop</a>.
-                        <br>I primarily worked in the project: Ximeng Hemodialysis Information System.
-                        <br>I also participated in the development of Kangxu E-shopping app.
-                    </p>
 
+                        <ul class="less-margin">
+                            <li>
+                                <p >Kangxu Tech is a smart eHealth provider affiliated with the <a href=" http://www.kaxvip.cn/">Kangxu Gruop</a>.</p>
+                            </li>
+                            <li>
+                                <p>
+                                    I primarily worked in the project: Ximeng Hemodialysis Information System and <br>
+                                    also participated in the development of Kangxu E-shopping app
+                                </p>
+                            </li>
+                        </ul>
+                    </p>
                 </div>
             </div>
         </div>
@@ -342,10 +438,20 @@
                     <!-- <p style="text-indent: 0px;margin-bottom:0%"> -->
                     <p>
                         <strong>University of California, Berkeley</strong>
-                        <br>One semester exchange at EECS Division, Spring 2020
-                        <br> Core courses: <br> CS 170 Efficient Algorithm and Intractable Problems;
-                        <br> CS 61C Great Ideas in Computer Architecture (Machine Structures);
-                        <br> MATH 55 Discrete Mathematics
+                        <br>One semester exchange at EECS, Spring 2020
+                        <br> Core courses: 
+                        <ul class="less-margin">
+                            <li>
+                                <p>CS 170 Efficient Algorithm and Intractable Problems</p>
+                            </li>
+                            <li>
+                                <p>CS 61C Great Ideas in Computer Architecture (Machine Structures)</p>
+                            </li>
+                            <li>
+                                <p>MATH 55 Discrete Mathematics</p>
+                            </li>
+                        </ul>
+
                         <!-- order: up right bottom left -->
                         <!-- <div style="margin:0 0 0 15px; padding:0%">
                             <p style="margin:0 0 0 0; padding:0%">
@@ -362,8 +468,8 @@
                         <br> Topic: Computational Pearls with Functional Programming, advised by <a href="https://www.comp.nus.edu.sg/cs/bio/henz/">Prof. Martin Henz</a>.
 
                     </p>
-                    <img src="pics/exchange/berkeley-exchange.jpg" class="publogo img-fluid rounded g" width="250" <="" a="">
-                    <img src="pics/exchange/nus-exchange.jpg" class="publogo img-fluid rounded g" width="250" <="" a="">
+                    <!-- <img src="pics/exchange/berkeley-exchange.jpg" class="publogo img-fluid rounded g" width="250" <="" a=""> -->
+                    <!-- <img src="pics/exchange/nus-exchange.jpg" class="publogo img-fluid rounded g" width="250" <="" a=""> -->
 
                 </div>
             </div>
@@ -443,21 +549,23 @@
                                 <br> A homework submission and grading website for SUSTech CS307 Principles of Database Systems.
                                 <br> Designed and Implemented by our team: Yunhao Luo, Jiahong Xiang, and Taoyue Zhang.
                                 <br> SpringBoot as the backend and React as the frontend.
-                                <br><span class="links">
+                                
+                                <!-- <br><span class="links">
                                     <a href="javascript:toggleContent('pdemo_btn_id_1', 'project_demo_id_1', 'Collapse', 'Demo')" id="pdemo_btn_id_1">Demo</a><br/>
                                     <br>
                                     <div class="project_demo" style="display: none" id="project_demo_id_1">
-                                        <!-- <img src="pics/proj/re2-f.gif" class="publogo img-fluid float-left rounded g" width="400" a=""> -->
+                                        <img src="pics/proj/re2-f.gif" class="publogo img-fluid float-left rounded g" width="400" a="">
                                         <br>
                                         <br>
                                     </div>
-                                </span>
+                                </span> -->
+                                
                             </p>
                         </div>
                     </div>
 
                     <!-- 4 -->
-                    <div class="publication media">
+                    <!-- <div class="publication media">
                         <img src="pics/proj/miss_modality.jpg" class="publogo img-fluid float-left rounded g" width="150" a="">
                         <div class="media-body">
                             <p>
@@ -466,7 +574,7 @@
                                 <br>
                             </p>
                         </div>
-                    </div>
+                    </div> -->
 
 
                     <!-- <div class="publication media">
@@ -533,27 +641,30 @@
                             <br>
                         </li>
                         <li>
-                            <p> I am keen on playing music &#x1F3b5 and I started to play <a href="https://en.wikipedia.org/wiki/Bamboo_flute">Bamboo Flute </a> when I was eight :P. </p> <br> I play for the woodwind section of SUSTech Zhiren Traditional Orchestra.
-                            We hold
+                            <p> I am keen on playing music &#x1F3b5 and I started to play <a href="https://en.wikipedia.org/wiki/Bamboo_flute">Bamboo Flute </a> when I was eight :P. </p> <br> 
+                            <p> I played for the woodwind section of SUSTech Zhiren Traditional Orchestra. </p>
+                            <!-- We hold
                             <a href="https://newshub.sustech.edu.cn/html/201906/15992.html">amazing concerts </a>frequently. &#x2B07
                             <br>
                             <img src="pics/misc/Zhiren-orchestra-2.jpg" class="publogo img-fluid left  rounded g" width="300" a="" style="margin: 15px">
-                            <img src="pics/misc/Zhiren-orchestra.jpg" class="publogo img-fluid left  rounded g" width="300" a="" style="margin: 15px"><br>
+                            <img src="pics/misc/Zhiren-orchestra.jpg" class="publogo img-fluid left  rounded g" width="300" a="" style="margin: 15px"><br> -->
                         </li>
                         <li>
                             <p> I enjoy playing basketball &#x1F3C0 and I am also a member of college varsity team. In high school, our team won <a href="http://www.hsfz.net.cn/homepage/article_display.jsp?id=4693">the fifth place</a> in 2016 Nike League
                                 Championship, Guangzhou.</p>
-                            <br><img src="pics/misc/nike-league.jpg" class="publogo img-fluid left  rounded g" width="300" a="" style="margin: 15px"><br>
+                            <!-- <br><img src="pics/misc/nike-league.jpg" class="publogo img-fluid left  rounded g" width="300" a="" style="margin: 15px"><br> -->
                         </li>
                         <li>
                             <p> I am a photography enthusiast &#x1F4F8. I was a photographer and administrative assistant at the SUSTech Student Press from 2018 to 2020.</p>
                         </li>
-                        <li>
-                            <p> I love learning new languages; it's fun to express myself in many interesting ways. I can speak Mandarin, English, Cantonese, and a little German.</p>
-                        </li>
+
+                        <!-- <li> -->
+                            <!-- <p> I love learning new languages; it's fun to express myself in many interesting ways. I can speak Mandarin, English, Cantonese, and a little German.</p> -->
+                        <!-- </li> -->
                         <!-- <li>
                             <p> I love traveling. I maintain a <a href="https://goo.gl/maps/kFddcxmx5UCtaVD76">Places I've Visited</a> map. Looking forward to exploring the rest of the world! </p>
                         </li> -->
+
                     </ul>
                 </div>
             </div>
@@ -572,7 +683,7 @@
     </div>
     <!-- text-indent:3em;  -->
     <div style="margin-left: 70%;" id='modify_log'>
-        <p>Last updated: Dec 5th, 2021</p>
+        <p>Last updated: Oct 26th, 2022</p>
         <br/>
     </div>
 
