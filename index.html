@@ -146,11 +146,10 @@
                         </p>
                         <br>
                         <p style="text-align: justify;">
-                            Hello, I am a first year Master student at Brown. I received my B.E. from <a href="https://www.sustech.edu.cn/">Southern University of Science and Technology (SUSTech)</a>. 
-                            Currently, I focus on computer vision and strive to build general AI agents that are applicable to multiple modalities with trusty performance.
-                            At SUSTech, I am fortunate to be advised by
-                            <a href="https://faculty.sustech.edu.cn/zhangjg/en/">Prof. Jianguo Zhang</a> on medical image analysis and adversarial attack.
-                            I also work with <a href="https://scholar.google.com/citations?user=SReb2csAAAAJ&hl=en">Prof. Lin Wang</a> at HKUST(GZ) primarily on semantic segmentation and domain generalization. Even before, I was an intern at Tencent WeChat Group.
+                            Hello, I am a first year Master student at Brown.
+                            <!-- I focus on computer vision and strive to build general AI agents that are applicable to multiple modalities with trusty performance. -->
+                            Currently, I am working with Prof. <a href="http://chensun.me/">Chen Sun</a> on video unsupervised object-centric learning.
+                            I am also interested in learning implicit neural representation that enables machine to compositionally understand complex scenes as humans do.
                            
                             <!-- Now, I mainly work on adversarial attack and uncertainty in medical image processing. Before that, I finished my high school in <a href="http://www.hsfz.net.cn/homepage/index.jsp">the Affiliated High School of SCNU</a> in Guangzhou. -->
                         </p>
@@ -159,6 +158,24 @@
             </div>
         </div>
     </div>
+
+    <!-- News -->
+    <div class="container">
+        <div>
+            <div class="row mt-3">
+                <div class="col-12 pt-3  px-4  bubble offset-xl-1 col-xl-10">
+                    <h4>Bio</h4>
+                    <p>
+                        I was fortunate to be advised by
+                        Prof. <a href="https://faculty.sustech.edu.cn/zhangjg/en/">Jianguo Zhang</a> on medical image analysis and adversarial attack.
+                        I also worked with <a href="https://scholar.google.com/citations?user=SReb2csAAAAJ&hl=en">Prof. Lin Wang</a> at HKUST on semantic segmentation and domain generalization. I received my B.E. from <a href="https://www.sustech.edu.cn/">Southern University of Science and Technology (SUSTech)</a> and was an intern at Tencent WeChat Group.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- News -->
     <div class="container">
@@ -176,9 +193,9 @@
                         <!-- <li>
                             <p> 2022.01 I started to work with Xu Zheng and Lin (Addison) Wang on semi-supervised learning, preparing for ECCV 2022.</p>
                         </li> -->
-                        <li>
-                            <p> 2021.10 I received the Second Class Award of SUSTech Merit Student Scholarship again.</p>
-                        </li>
+                        <!-- <li> -->
+                            <!-- <p> 2021.10 I received the Second Class Award of SUSTech Merit Student Scholarship again.</p> -->
+                        <!-- </li> -->
                         <li>
                             <p> 2021.06 I won the Honerable Mentioned in 2021 China Operating System Contest (Kernel Track). </p>
                         </li>
@@ -217,9 +234,10 @@
                         <div class="media-body">
                             <a name='robustness'></a>
                             <p id="p_robustness">
-                                <strong>Semi-Supervised Semantic Segmentation via Boosting Uncertainty on Unlabeled Data</strong> (under review) <br>  Daoan Zhang*, <strong>Yunhao Luo*</strong>, Jie-Neng Chen, Lingyun Huang, Jianguo Zhang
+                                <strong>Semi-Supervised Semantic Segmentation via Boosting Uncertainty on Unlabeled Data</strong> (under review, ICCV'23) 
+                                <br>Daoan Zhang*, <strong>Yunhao Luo*</strong>, Jie-Neng Chen, Lingyun Huang, Jianguo Zhang
                                 <br>
-                               
+                                TL;DR: We design a method to mitigate the negative impact when training on pseudo labels.
                             </p>
                         </div>
                     </div>
@@ -227,10 +245,9 @@
                         <div class="media-body">
                             <a name='robustness'></a>
                             <p id="p_robustness">
-                                <strong>CNN-Transformer Collaborative Learning for Semantic Segmentation</strong> (under review) 
-                                <br> Jinjing Zhu, <strong>Yunhao Luo</strong>, Xu Zheng, Lin Wang
-                                <br>
-                                
+                                <strong>CNN-Transformer Collaborative Learning for Semantic Segmentation</strong> (under review, ICCV'23) 
+                                <br> Jinjing Zhu, <strong>Yunhao Luo</strong>, Xu Zheng, Lin Wang <br>
+                                TL;DR: We study how to do cross distillation between a transformer and a CNN for semantic segmentation.
                             </p>
                         </div>
                     </div>
@@ -239,10 +256,11 @@
                         <div class="media-body">
                             <a name='robustness'></a>
                             <p id="p_robustness">
-                                <strong>Transformer-CNN Cohort: Semi-supervised Semantic Segmentation by the Best of Both Students</strong> 
+                                <strong>Transformer-CNN Cohort: Semi-supervised Semantic Segmentation by the Best of Both Students</strong> (under review, ICCV'23)
                                 <br> <a href="https://arxiv.org/abs/2209.02178">[Paper]</a> 
-                                <br> Xu Zheng, <strong>Yunhao Luo</strong>, Chong Fu, Hao Wang, Lin Wang
-                                <br>
+                                <br> Xu Zheng, <strong>Yunhao Luo</strong>, Chong Fu, Hao Wang, Lin Wang<br>
+                                TL;DR: We study how to leverage a transformer and a CNN together for semi-supervised semantic segmentation.
+                                
                                 <!-- <span class="links">
                                     <a href="javascript:toggleContent('btn_id_2', 'content_id_2', 'Collapse', 'Abstract')" id="btn_id_2">Abstract</a><br/>
                                     <div class="abstract" id="content_id_2">
@@ -254,22 +272,21 @@
                     </div>
 
 
-                    <div class="publication media">
+                    <!--<div class="publication media">
                         <div class="media-body">
                             <a name='robustness'></a>
                             <p id="p_robustness">
                                 <strong>Distilling Efficient Vision Transformers from CNNs for Segmentation: A Vision-Language Perspective</strong> 
-                                <br> Xu Zheng,  <strong>Yunhao Luo</strong>, Lin Wang
-                                <br>
+                                <br> Xu Zheng,  <strong>Yunhao Luo</strong>, Lin Wang<br>
+                                TL;DR: We study how to leverage a transformer and a CNN together for semi-supervised semantic segmentation.
                                 <!-- <span class="links">
                                     <a href="javascript:toggleContent('btn_id_2', 'content_id_2', 'Collapse', 'Abstract')" id="btn_id_2">Abstract</a><br/>
                                     <div class="abstract" id="content_id_2">
-
                                     </div>
-                                </span> -->
+                                </span>
                             </p>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="publication media">
                         <div class="media-body">
@@ -277,8 +294,8 @@
                             <p id="p_robustness">
                                 <strong>All One Needs to Know about Priors for Deep Image Restoration and Enhancement: A Survey</strong> (submitted to TPAMI)
                                 <br> <a href="https://arxiv.org/abs/2206.02070">[Paper]</a> 
-                                <br> Yunfan Lu*, Yiqi Lin*, Hao Wu*, <strong>Yunhao Luo</strong>, Xu Zheng, Lin Wang
-                                <br>
+                                <br> Yunfan Lu*, Yiqi Lin*, Hao Wu*, <strong>Yunhao Luo</strong>, Xu Zheng, Lin Wang<br>
+                                TL;DR: We try to survey all kinds of priors for image restoration and enhancement.
                                 <!-- <span class="links">
                                     <a href="javascript:toggleContent('btn_id_2', 'content_id_2', 'Collapse', 'Abstract')" id="btn_id_2">Abstract</a><br/>
                                     <div class="abstract" id="content_id_2">
@@ -416,7 +433,7 @@
                         <!-- <p class="shifted">I was responsible for the client-end software development for <a href="https://work.weixin.qq.com/">WeCom</a>.</p> -->
                     </p>
 
-                    <p>
+                    <!-- <p>
                         <strong>Product Manager Intern at Guangzhou Kangxu Tech Co., Ltd</strong> &ensp; Jan 2021 - Feb 2021
 
                         <ul class="less-margin">
@@ -430,7 +447,7 @@
                                 </p>
                             </li>
                         </ul>
-                    </p>
+                    </p> -->
                 </div>
             </div>
         </div>
