@@ -1,735 +1,789 @@
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F76XVSKN3V"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-F76XVSKN3V');
-    </script>
-
-    <!-- <meta name="google-site-verification" content="luiKJ6NTZHsgoD15xoPljBeAHAgSwMOoXhBmQG8-LQ8" /> -->
-
-    <title> Yunhao Luo @Brown </title>
+    <title>Yunhao Luo @ Brown</title>
     <meta charset="utf-8">
-    <meta name="Yunhao Luo's Homepage" http-equiv="Content-Type" content="Yunhao Luo's Homepage">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Yunhao Luo is a M.S. student at Brown University, with reserach interests on machine learning for embodied agents.">
+    <meta name="keywords" content="Yunhao Luo,Yunhao,Artifical Intelligence,Computer Vision,Robotics,Machine Learning,Cognitive Science">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="static/img/brown-log.png">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito" />
-    <link href="./hover.css" rel="stylesheet">
-    <!-- <link rel="icon" type="image/png" sizes="150x150" href="pics/sustech-logo.png"> -->
-    <link rel="icon" type="image/png" sizes="150x150" href="pics/brown-log.png">
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
     <style type="text/css">
-        li div {
-            text-align: right;
-        }
-        
-        li div span {
-            float: left;
-        }
-        
-        div li p {
-            display: inline;
-        }
-        
-        .publogo {
-            margin-right: 20px;
-        }
-        
-        .publication {
-            padding-left: 10px;
-            padding-top: 10px;
-            margin-bottom: 10px;
-        }
-        
-        .publication strong a {
-            color: #000;
-            text-decoration: none;
-        }
-        
-        .publication strong a:hover {
-            text-decoration: underline;
-        }
-        
-        .publication .links a {
-            margin-right: 15px;
-        }
-        
-        .press {
-            display: inline-block;
-            padding: 5px;
-            height: 70px;
-        }
-        
-        .press a img {
-            border: 3px solid #fff;
-            /*border-ra truncated 1065bytes...*/
-        }
-        
-        .new {
-            color: #D10C15;
-            font-weight: bold;
-        }
+body{margin:0;padding:0;background-color:#eee;}
+a{color:#4e613e}
+a{color:#8d5638}
+a:hover{color:#566c7f}
+a:hover{color:#bc6262}
+#background{position:fixed;top:0;overflow:hidden;height:0}
+#wave-canvas{display:block;position:relative;top:0;left:5%;width:55%;min-width:850px;height:150px;border:0}
+#main{z-index:2;margin:0 auto;position:absolute;top:2%;width:100%;min-width:240px;text-align:center;}
+
+#main-content{background:rgba(238,238,238,0.95);padding:0;text-align:center;cursor:default;text-align:center;}
+#main-content{margin-left:6.5104167%;width:86.9791667%;}
+@media (min-width: 768px) {
+    #main-content{width:66%;min-width:668px;margin-left:50px}
+}
+@media (min-width: 1200px) {
+    #main-content{width:66%;max-width:900px;margin-left:100px}
+}
+/*#main-content {
+    width:86.9791667%;
+    margin: 0 auto;
+}
+@media (min-width: 768px) {
+    #main-content{width:66%;min-width:668px;}
+}
+@media (min-width: 1200px) {
+    #main-content{width:66%;max-width:900px;}
+}*/
+/* Avatar, Name, etc. */
+#main-content-container{margin:0 auto;padding:15px 0em 15px 0em;max-width:1080px;}
+@media (min-width: 768px) {
+    #main-content-container{padding:15px 0 15px 2em;}
+}
+#main-content-container .col-avatar{text-align:center}
+@media (min-width: 768px) {
+    #main-content-container .col-avatar{text-align:right}
+}
+#main-content-container .col-avatar .avatar{z-index:100;width:150px;height:150px;margin-top:0px;border-radius:100%;box-shadow:0 0 0 0.3em #fff;opacity:1;}
+
+#main-content-container .col-info{height:100%;align-items:center;display:-webkit-flex;height:150px}
+#main-info-container{padding-top:15px}
+#main-info-container .col-name{text-align:center}
+#main-info-container .col-name .textbox-info{display:inline-block;margin:0 auto;text-align:left}
+#main-info-container .col-name .name{margin:0;color:#566c7f;font-size:1.85em;font-family:"Source Sans Pro",Helvetica,sans-serif}
+#main-info-container .col-name .email{color:#666; font-size:14px}
+#main-info-container .col-link{text-align:center;margin:-5px 0 -25px;}
+#main-info-container .col-link ul {margin:0px auto auto;padding:0;list-style:none;text-align:center}
+#main-info-container .col-link li {display:inline-block;margin:auto;padding:0 10px;color:#ccc;line-height:10px}
+#main-info-container .col-link li a{width:45px;height:45px;color:#ccc;padding:0;font-size:45px;line-height:45px}
+#main-info-container .col-link li a:focus,
+#main-info-container .col-link li a:hover{text-decoration:none;cursor:hand}
+#main-info-container .col-link li a.border{border:1px solid #ccc;border-radius:100%;}
+#main-info-container .col-link li a.padding{padding:0px 0px;font-size:22px}
+
+/* Other */
+#main-more-container{background:#ffffff;width:100%;padding:0 30px}
+
+#main-bio-container{margin:auto;padding: 0 0em;max-width:1080px;text-align:left;padding-top:30px;max-width:1080px;font-size:1rem;line-height:1.4}
+#main-bio-container .subtitle{margin-top:30px;color:#566c7f}
+
+#misc-container{margin:0 0em;padding: 0 0em;max-width:1080px;text-align:left;padding-top:30px;max-width:1080px;font-size:1rem;line-height:1.4}
+/* #misc-container .subtitle{margin-top:30px;color:#566c7f} */
+
+#main-pub-container{margin:auto;padding: 0 0em;max-width:1080px;text-align:left;padding-top:30px;max-width:1080px}
+#main-pub-container .subtitle{color:#566c7f;}
+#main-pub-container .subtitle a {font-weight:400;font-size:18px}
+#main-pub-container .subtitle a.activated {color:#333333}
+#main-pub-container .subtitle a.activated:focus,
+#main-pub-container .subtitle a.activated:hover {text-decoration:none;cursor:initial}
+#main-pub-container .move-up {margin-top:-0.3cm}
+#main-pub-container .move-up-more {margin-top:-0.5cm}
+#main-pub-container .move-down {margin-top:0.8cm}
+
+#main-pub-container .subtitle-aux {font-size:1rem}
+#main-pub-container .subtitle-aux a.activated {color:#333333}
+#main-pub-container .subtitle-aux a.activated:focus,
+#main-pub-container .subtitle-aux a.activated:hover {text-decoration:none;cursor:initial}
+#main-pub-container .subtitle-aux .note{margin-left:1em;color:#999999;text-decoration:none;font-size:14px}
+
+#main-pub-card-container{}
+#main-pub-card-container>h5{margin-bottom: 20px}
+#main-pub-card-container .pub-card{width: 100%;padding-bottom:15px;font-size:1rem}
+#main-pub-card-container .pub-card .col-l{text-align:center;padding-top:10px}
+#main-pub-card-container .pub-card .col-r{padding-top:10px}
+#main-pub-card-container .pub-card img{width:100%;margin:0 auto}
+#main-pub-card-container .pub-card-body{width:100%;background:transparent;padding-left:0px}
+#main-pub-card-container .pub-card .title{font-weight:600;font-size:1rem;margin-bottom:4px;line-height:1.4}
+#main-pub-card-container .pub-card .authors{font-weight:400;color:#666666;margin-bottom:4px;line-height:1.4}
+#main-pub-card-container .pub-card .authors a{color:#666666}
+#main-pub-card-container .pub-card .authors u{color:#333333;font-weight:600;text-decoration:none}
+#main-pub-card-container .pub-card .conference{color:#333333;font-weight:600}
+#main-pub-card-container .pub-card .note{display:block;color:#999999;text-decoration:none;font-size:12px}
+#main-pub-card-container .pub-card .info{margin-bottom:0;}
+#main-pub-card-container .row{margin:0}
+#main-pub-card-container .col-l,
+#main-pub-card-container .col-r{vertical-align:top;display:inline-block;margin:0;padding-left:0px}
+
+#footer{padding:1.5em 0 1.5em;min-width:240px;background:#f4f4f4;opacity:0.95;font-size:14px;line-height:12px;text-align:left}
+#footer .container{max-width:540px;padding:0 45px}
+#footer .row{align-items:center}
+#footer .stat{width:90px;overflow:hidden;margin:0 auto;padding:0 15px;}
+#footer .copyright{flex-grow:1;margin:5px auto 5px;text-align:left;display:block;font-size:14px;line-height:1.4}
+#footer a{color:#666666}
+#footer a:hover{color:#333333}
+
+.bold{font-weight:600}
+.highlight{color:#BB2222;font-weight:600}
+.highlight:hover{color:#BB2222;font-weight:600}
+.hide{display:none}
     </style>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150364978-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-150364978-1');
-    </script>
-
-    <script type="text/javascript" language="JavaScript">
-        var imgs = [
-            // '"pics/luo1.jpg"',
-            //'"pics/luo2.jpg"',
-            // '"pics/luo3.jpg"',
-            //'"pics/luo5s.jpg"',
-            // '"pics/luo6.jpg"',
-            '"pics/luo9.jpg"',
-            //'"pics/headshot_paloalto.jpg"',
-            //'"pics/headshot_nyc.jpg"',
-            //'"pics/headshot_stanford.jpg"'
-        ];
-        var num_imgs = imgs.length;
-
-        start = '<img src=';
-        end = ' id="me" height="20" itemprop="photo" class="float-left img-fluid">';
-
-        function printImage() {
-            var rand_int = Math.floor(Math.random() * num_imgs);
-            document.write(start + imgs[rand_int] + end);
-        }
-        // Yunhao
-        function toggleContent(btn_id, content_id, text_expand, text_back) {
-            if (document.getElementById(content_id).style.display == 'block') {
-                document.getElementById(content_id).style.display = 'none';
-                document.getElementById(btn_id).innerHTML = text_back;
-            } else {
-                document.getElementById(content_id).style.display = 'block';
-                document.getElementById(btn_id).innerHTML = text_expand;
-            }
-        }
-    </script>
 </head>
 
 <body>
-    <div class="topbar">
-        <div class="container">
-            <div>
-                <div class="row mt-3">
-                    <br>
-                    <!--Empty; for layout only. -->
-                </div>
-                <div class="row mt-0">
-                    <div class="col-2 col-sm-2 col-md-2 col-lg-2 p-0 pl-0 pl-sm-4 offset-xl-1 col-xl-3" height='50%'>
-                        <script type="text/javascript" language="JavaScript">
-                            printImage();
-                        </script>
-                    </div>
 
-                    <div class="col-10 col-sm-10 col-md-10 col-lg-10 pl-3 pr-1 px-sm-4 pl-md-5 pt-1 pb-1 pb-sm-1 pt-sm-1 nameplate col-xl-7 offset-xl-0">
-                        <h2><span itemprop="name">Yunhao Luo</span></h2>
-                        <p class="my-0">CS@Brown<br> yluo73 [at] cs.brown.edu / devinluo27 [at] gmail.com<br> <a href="https://scholar.google.com/citations?user=4vstLzwAAAAJ&hl=en&oi=ao">Google Scholar</a> / <a href="https://www.linkedin.com/in/yunhao-luo-5159751a4/">LinkedIn</a> / <a href="https://github.com/aloofluo">GitHub</a>                            
-                            <!-- / <a href="https://twitter.com/AloofLuo">Twitter</a> -->
-                        </p>
-                        <br>
-                        <p style="text-align: justify;">
-                            Hello, I am a first year Master student at Brown.
-                            <!-- I focus on computer vision and strive to build general AI agents that are applicable to multiple modalities with trusty performance. -->
-                            Currently, I am working with Prof. <a href="http://chensun.me/">Chen Sun</a> on video unsupervised object-centric learning. <br>
-                            I am also interested in learning implicit neural representation that enables machine to compositionally understand complex scenes as humans do.
-                           
-                            <!-- Now, I mainly work on adversarial attack and uncertainty in medical image processing. Before that, I finished my high school in <a href="http://www.hsfz.net.cn/homepage/index.jsp">the Affiliated High School of SCNU</a> in Guangzhou. -->
-                        </p>
-                    </div>
-                </div>
+<!-- <img src="background.jpeg" id="background" class="" /> -->
+
+<div id="main">
+    <!--canvas id="wave-canvas"></canvas-->
+
+    <div id="main-content">
+        <div id="main-content-container" class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-3 col-avatar">
+                <img src="images/luo7.jpg" class="avatar" />
             </div>
-        </div>
-    </div>
-
-    <!-- News -->
-    <div class="container">
-        <div>
-            <div class="row mt-3">
-                <div class="col-12 pt-3  px-4  bubble offset-xl-1 col-xl-10">
-                    <!-- <h4>Bio</h4> -->
-                    <p>
-                        I was fortunate to be advised by
-                        Prof. <a href="https://faculty.sustech.edu.cn/zhangjg/en/">Jianguo Zhang</a> on medical image analysis and adversarial attack.
-                        I also worked with <a href="https://scholar.google.com/citations?user=SReb2csAAAAJ&hl=en">Prof. Lin Wang</a> at HKUST on semantic segmentation and domain generalization. I received my B.E. from <a href="https://www.sustech.edu.cn/">Southern University of Science and Technology (SUSTech)</a> and was an intern at Tencent WeChat Group.
-
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- News -->
-    <div class="container">
-        <div>
-            <div class="row mt-3">
-                <div class="col-12 pt-3  px-4  bubble offset-xl-1 col-xl-10">
-                    <h4>News</h4>
-                    <ul>
-                        <li>
-                            <p> 2023.07 Two papers to be appeared in ICCV 2023.</p>
-                        </li>
-                        <li>
-                            <p> 2022.06 I won the SUSTech Distinguished Undergrad Thesis Award.</p>
-                        </li>
-                        <!-- <li>
-                            <p> 2022.06 One survey paper uploaded to arxiv. "All One Needs to Know about Priors for Deep Image Restoration and Enhancement: A Survey" <a href="https://arxiv.org/abs/2206.02070">link</a> </p>
-                        </li> -->
-                        <!-- <li>
-                            <p> 2022.01 I started to work with Xu Zheng and Lin (Addison) Wang on semi-supervised learning, preparing for ECCV 2022.</p>
-                        </li> -->
-                        <!-- <li> -->
-                            <!-- <p> 2021.10 I received the Second Class Award of SUSTech Merit Student Scholarship again.</p> -->
-                        <!-- </li> -->
-                        <li>
-                            <p> 2021.06 I won the Honerable Mentioned in 2021 China Operating System Contest (Kernel Track). </p>
-                        </li>
-                        <!-- <li>
-                            <p> 2021.05 I am now working on one conference paper and one survey! </p>
-                        </li> -->
-                        <!-- <li> -->
-                            <!-- <p> 2021.04 I received Honorable Mention Award in MCM 2021 with Yitian and Chongyang. </p> -->
-                        <!-- </li> -->
-                        <!-- <li> <p> <span class="new"> [new] </span> 2020.04 I'm a TA for <a href="http://cs231n.stanford.edu">CS231n</a> in Spring 2020. </p> </li> -->
-                        <li>
-                            <p> 2021.03 Our online platform for SQL scripts judging in CS307 came online at SUSTech &#x1F5A5 </p>
-                        </li>
-                        <!-- <li>
-                            <p> 2021.02 One <a href="#STGraph20">paper</a> submitted to <a href="https://www.miccai2021.org/">MICCAI 2021</a>. </p>
-                        </li> -->
-
-                        <li>
-                            <p> 2021.02 I will join <a href="https://www.wechat.com/en/">WeChat</a> as a SWE intern in 2021 Summer.</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Publications -->
-    <div class="container">
-        <div>
-            <div class="row mb-3">
-                <div class="col-12 px-4 bubble offset-xl-1 col-xl-11">
-                    <br>
-                    <h4>Publications</h4>
-
-                    <div class="publication media">
-                        <div class="media-body">
-                            <a name='robustness'></a>
-                            <p id="p_robustness">
-                                <strong>CNN-Transformer Collaborative Learning for Semantic Segmentation</strong> (ICCV 2023) 
-                                <br> Jinjing Zhu, <strong>Yunhao Luo</strong>, Xu Zheng, Hao Wang, Lin Wang <br>
-                                TL;DR: We study how to do cross distillation between a transformer and a CNN for semantic segmentation.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="publication media">
-                        <div class="media-body">
-                            <a name='robustness'></a>
-                            <p id="p_robustness">
-                                <strong>Look at the Neighbor: Distortion-aware Unsupervised Domain Adaptation for Panoramic Semantic Segmentation
-                                </strong> (ICCV 2023) 
-                                <br> Xu Zheng,  Tianbo Pan, <strong>Yunhao Luo</strong>, Lin Wang <br>
-                            </p>
-                        </div>
-                    </div>
-
-
-                    <!-- <div class="publication media">
-                        <div class="media-body">
-                            <a name='robustness'></a>
-                            <p id="p_robustness">
-                                <strong>Semi-Supervised Semantic Segmentation via Boosting Uncertainty on Unlabeled Data</strong> (under review, ICCV'23) 
-                                <br>Daoan Zhang*, <strong>Yunhao Luo*</strong>, Jie-Neng Chen, Lingyun Huang, Jianguo Zhang
-                                <br>
-                                TL;DR: We design a method to mitigate the negative impact when training on pseudo labels.
-                            </p>
-                        </div>
-                    </div> -->
-
-                    <div class="publication media">
-                        <div class="media-body">
-                            <a name='robustness'></a>
-                            <p id="p_robustness">
-                                <strong>Transformer-CNN Cohort: Semi-supervised Semantic Segmentation by the Best of Both Students</strong> (under review, ICCV'23)
-                                <br> <a href="https://arxiv.org/abs/2209.02178">[Paper]</a> 
-                                <br> Xu Zheng, <strong>Yunhao Luo</strong>, Chong Fu, Hao Wang, Lin Wang<br>
-                                TL;DR: We study how to leverage a transformer and a CNN together for semi-supervised semantic segmentation.
+            <div class="col-sm-12 col-md-9 col-info">
+                <div id="main-info-container" class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-xl-6 col-name">
+                            <div class="textbox-info">
+                                <h1 class="name"><span>Yunhao Luo</span></h1>
+                                <p class="email">Email: yunhao_luo [at] brown [dot] edu <br>
+                                <!-- Twitter:  <a href="https://twitter.com/du_yilun">https://twitter.com/du_yilun</a> <br> -->
+                                <!-- Google Scholar:  -->
+                                <a href="https://scholar.google.com/citations?user=4vstLzwAAAAJ&hl=en&oi=ao">Google Scholar</a> /
+                                <a href="https://github.com/devinluo27">Github</a>
+                                <!-- Github: <a href="https://github.com/yilundu">https://github.com/yilundu</a> </p> -->
                                 
-                                <!-- <span class="links">
-                                    <a href="javascript:toggleContent('btn_id_2', 'content_id_2', 'Collapse', 'Abstract')" id="btn_id_2">Abstract</a><br/>
-                                    <div class="abstract" id="content_id_2">
-
-                                    </div>
-                                </span> -->
-                            </p>
+                            </div>
                         </div>
                     </div>
-
-
-                    <!--<div class="publication media">
-                        <div class="media-body">
-                            <a name='robustness'></a>
-                            <p id="p_robustness">
-                                <strong>Distilling Efficient Vision Transformers from CNNs for Segmentation: A Vision-Language Perspective</strong> 
-                                <br> Xu Zheng,  <strong>Yunhao Luo</strong>, Lin Wang<br>
-                                TL;DR: We study how to leverage a transformer and a CNN together for semi-supervised semantic segmentation.
-                                <!-- <span class="links">
-                                    <a href="javascript:toggleContent('btn_id_2', 'content_id_2', 'Collapse', 'Abstract')" id="btn_id_2">Abstract</a><br/>
-                                    <div class="abstract" id="content_id_2">
-                                    </div>
-                                </span>
-                            </p>
-                        </div>
-                    </div> -->
-
-                    <div class="publication media">
-                        <div class="media-body">
-                            <a name='robustness'></a>
-                            <p id="p_robustness">
-                                <strong>All One Needs to Know about Priors for Deep Image Restoration and Enhancement: A Survey</strong> (submitted to TPAMI)
-                                <br> <a href="https://arxiv.org/abs/2206.02070">[Paper]</a> 
-                                <br> Yunfan Lu*, Yiqi Lin*, Hao Wu*, <strong>Yunhao Luo</strong>, Xu Zheng, Lin Wang<br>
-                                TL;DR: We try to survey all kinds of priors for image restoration and enhancement.
-                                <!-- <span class="links">
-                                    <a href="javascript:toggleContent('btn_id_2', 'content_id_2', 'Collapse', 'Abstract')" id="btn_id_2">Abstract</a><br/>
-                                    <div class="abstract" id="content_id_2">
-
-                                    </div>
-                                </span> -->
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-
-                    <!-- <div class="publication media">
-                        <div class="media-body">
-                            <a name='robustness'></a>
-                            <p id="p_robustness">
-                                <strong>Robustness of Deep Learning in Al Assisted Diagnosis: A Comprehensive Study</strong>, (in Chinese, final report for project SafeAI) <br> Chenxu Hu, <strong>Yunhao Luo,</strong> Shuqi Liu, Tianjun Huang, Jianguo
-                                Zhang
-                                <br>
-                                <span class="links">
-                                    <a href="javascript:toggleContent('btn_id_2', 'content_id_2', 'Collapse', 'Abstract')" id="btn_id_2">Abstract</a><br/>
-                                    <div class="abstract" id="content_id_2">
-                                        Medical image analysis is an important and practical AI application. To prevent medical negligence caused by AI, users always place strict requirements for the robustness of medical AI systems. Therefore, it is of great significance to research how AI systems defend against adversarial examples. In this project, we firstly build a unique adversarial example dataset based on International Skin Imaging Collaboration (ISIC) 2018 Dataset. Secondly, we design an online BNN-based defensive training strategy that can significantly increase the model’s accuracy under malicious perturbation. Thirdly, we propose an efficient metric of adversarial robustness called tournament matrix and devise an attention-guided adversarial attack method to generate stealthy and effective. Finally, we have done some preliminary experiments on Visual Transformers. 
-                                    </div>
-                                </span>
-                            </p>
-                        </div>
-                    </div> -->
-
-
-                    <!-- <div class="publication media">
-                        <div class="media-body">
-                            <a name='uncertainty'></a>
-                            <p id="p_uncertainty">
-                                <strong>Bayesian Attention for Inter-Rater Uncertainty Quantification in Medical Image Segmentation</strong><br> Qingqiao Hu*, Hao Wang*, Jing Luo, <strong>Yunhao Luo,</strong> <a href="https://scholar.google.com/citations?user=VpM-3NwAAAAJ&hl=en">Hongwei Li</a>,
-                                Jianguo Zhang<br>
-                                <em>To be submitted to TMI </em>2021.<br>
-                                <span class="links">
-                                    <a href="javascript:toggleContent('btn_id_1', 'content_id_1', 'Collapse', 'Abstract')" id="btn_id_1">Abstract</a><br/>
-                                    <div class="abstract" id="content_id_1">
-                                        Semantic segmentation of regions of interest in medical images is inherently ambiguous. For example, the boundary of a structure may not be clearly visible, and different experts may have varying styles or levels of expertise. In this work, we present a simple yet effective framework to estimate inter-rater uncertainty in medical image segmentation tasks. The key idea is to model each rater’s uncertainty in several separated decoders and to introduce probabilistic attention to learn their annotation distributions. First, we demonstrate the motivation of the one-encoder-m-decoder architecture choice compared to the traditional one-encoder-one-decoder one. We further introduce a probabilistic attention gate module to capture the underlying segmentation distribution. We performed extensive experiments on both synthetic and real-world datasets. Our method outperforms state-of-the-art methods in five tasks (out of seven) under two evaluation metrics considering two aspects of uncertainty modeling. 
-                                    </div>
-                                </span>
-                            </p>
-                        </div>
-                    </div> -->
-
-
-
-                    <!-- <div class="publication media">
-                        <div class="media-body">
-                            <a name='survey_en'></a>
-                            <p id="p_survey_en">
-                                <strong>Threat of adversarial examples on medicalimage analysis: A survey</strong><br> Chenxu Hu, <strong>Yunhao Luo,</strong> Shuqi Liu, Tianjun Huang, Zheng Hu, Jianguo Zhang <br>
-                                <em>In progress</em> for submission in early 2022.<br>
-                                <span class="links">
-                                    <a href="javascript:toggleContent('btn_id_3', 'content_id_3', 'Collapse', 'Abstract')" id="btn_id_3">Abstract</a><br/>
-                                    <div class="abstract" id="content_id_3">
-                                        Recently, deep learning has rapidly developed in medical image classification, denoising, reconstruction, segmentation, and detection. However, there are still many unsettled issues in processing adversarial examples. We review the history of adversarial attacks, analyze the difference between medical and natural images, and introduce defense strategies. This review provides a broad overview of recent literature on medical adversarial examples, discusses shortcomings and opportunities of related methods, and elaborates potential future work. 
-                                    </div>
-                                </span>
-                            </p>
-                        </div>
-                    </div> -->
-
-                    <!-- <div class="publication media">
-                        <img src="pics/stgraph.jpg" class="publogo img-fluid float-left rounded g" width="150">
-                        <div class="media-body">
-                            <p id="STGraph20">
-                                <strong>Spatio-Temporal Graph for Video Captioning with Knowledge Distillation</strong><br>
-                                <strong>Boxiao Pan</strong>, Haoye Cai, <a href="http://ai.stanford.edu/~dahuang/">De-An Huang</a>, Kuan-Hui Lee, Adrien Gaidon, Ehsan Adeli, Juan Carlos Niebles<br>
-                                <em>Conference on Computer Vision and Pattern Recognition (CVPR), </em>2020.<br>
-                                <span class="links">
-					<a href="https://arxiv.org/abs/2003.13942">Paper</a>
-					<a href="https://github.com/StanfordVL/STGraph">Code</a>
-					<a href="https://youtu.be/QxHttaZF_Xc">Video</a>
-					<a href="docs/cvpr2020/slides.pptx">Slides</a>
-					<a href="docs/cvpr2020/poster.pdf">Poster</a>
-				</span>
-                            </p>
-                        </div>
-                    </div> -->
-
-                    <!-- <div class="publication media col-xl-11">
-                        <img src="pics/aaai_2020_tcon.png" class="publogo img-fluid float-left rounded g" width="150">
-                        <div class="media-body">
-                            <p>
-                                <strong>Adversarial Cross-Domain Action Recognition with Co-Attention</strong><br>
-                                <strong>Boxiao Pan*</strong>, <a href="https://caozhangjie.github.io">Zhangjie Cao</a>*, <a href="http://stanford.edu/~eadeli/">Ehsan Adeli</a>, Juan Carlos Niebles<br>
-                                <em> AAAI Conference on Artificial Intelligence (AAAI), </em>2020. (<strong>Oral Presentation</strong>) <br>
-                                <span class="links">
-				    <a href="http://arxiv.org/abs/1912.10405">Paper</a>
-			      	    <a href="docs/aaai2020/slides.pptx">Slides</a>
-				    <a href="docs/aaai2020/poster.pdf">Poster</a>
-				</span>
-                            </p>
-                        </div>
-                    </div> -->
-
-                    <!-- <div class="publication media col-xl-11">
-                        <img src="pics/pakdd_2018.jpg" class="publogo img-fluid float-left rounded g" width="150">
-                        <div class="media-body">
-                            <p>
-                                <strong>A Novel LSTM-Based Daily Airline Demand Forecasting Method Using Vertical And Horizontal Time Series</strong><br>
-                                <strong>Boxiao Pan</strong>, Dongfeng Yuan, Weiwei Sun, Cong Liang, Dongyang Li<br>
-                                <em> Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD) Workshop, </em>2018.<br>
-                                <span class="links"><a href="https://link.springer.com/chapter/10.1007/978-3-030-04503-6_17">Paper</a></span>
-                            </p>
-                        </div>
-                    </div> -->
-
-
-                    <!-- =============== -->
-
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- ======= Work ======== -->
-    <div class="container">
-        <div>
-            <div class="row mb-3">
-                <div class="col-12 pt-3 px-4 bubble offset-xl-1 col-xl-10">
-                    <h4>Work</h4>
-                    <p>
-                        <strong>Software Engineer Intern at Tencent, Wechat Group (WXG)</strong> &ensp; Jul 2021 - Sep 2021
-                        <ul class="less-margin">
-                            <li>
-                                <p > I was responsible for the client-end software development for <a href="https://work.weixin.qq.com/">WeCom</a>.</p>
-                            </li>
-                        </ul>
-                        <!-- <p class="shifted">I was responsible for the client-end software development for <a href="https://work.weixin.qq.com/">WeCom</a>.</p> -->
-                    </p>
+    <div id="main-more-container">
+        <div id="main-bio-container">
+            <p>
+            I am a second year M.S. student at <a href="https://cs.brown.edu/">Brown CS</a>.
+            I work closely with <a href="https://yilundu.github.io/">Yilun Du</a> and Prof. <a href="https://mitibmwatsonailab.mit.edu/people/joshua-tenenbaum/">Joshua B. Tenenbaum</a> at MIT and Prof. <a href="https://chensun.me/">Chen Sun</a> at Brown on embodied intelligence.
+            Before that, I worked with Prof. <a href="https://scholar.google.com/citations?user=SReb2csAAAAJ&hl=en">Lin Wang</a> at <a href="https://www.hkust-gz.edu.cn/">HKUST(GZ)</a> on image understanding and Prof.<a href="https://scholar.google.com/citations?hl=en&user=ypSmZtIAAAAJ&view_op=list_works">Jianguo Zhang</a> at SUSTech on medical image analysis.
+            I received my B.E. in CS from SUSTech in 2022.
+             <!-- and was an intern at Tencent. -->
+            <br>
+            <br>
+            My research goal is to develop autonomous agents that can freely interact with the physical world and bring a positive impact on  people's lives.
+            To this end, my interests lie in the intersection of computer vision, decision making, and robotics.
+            <!-- Existing large-scale data-driven models have gained some success, but these models are cumbersome, costly, and remain a black box. -->
+            I seek to build intelligence agents in a more efficient and scientific way by drawing inspiration from human cognition biases, such as compositionality,
+            to make them more reliable, lightweight, cost-effective, and accessible to users.
+            <!-- broadly interested in the interplay between computer vision, decision making, and robotics.   -->
+            Currently, I am working on leverage generative models to enable more robust decision-making. 
+            <!-- perception and planning -->
+            <br>
+            <br>
+            Besides academia, I spend my time doing sports, playing music, and juggling with friends. Check them out <a href="#misc-container">here</a>.
+            <!-- <br> -->
+            <!-- <br> -->
+            </p>
+            
+            <!-- I am a final year PhD student at <a href="https://www.eecs.mit.edu">MIT EECS</a>, advised by
+            Prof. <a href="https://people.csail.mit.edu/lpk/" target="_blank">Leslie Kaelbling</a>,  
+            Prof. <a href="https://people.csail.mit.edu/tlp/" target="_blank">Tomas Lozano-Perez</a> and 
+            Prof. <a href="http://cocosci.mit.edu/josh", target="_blank"> Joshua B. Tenenbaum</a>.
+            Previously, I obtained my bachelor's degree from MIT, 
+            was a research fellow at OpenAI, an intern and visiting researcher at FAIR and Google Deepmind, and got a gold medal at the International Biology Olympiad. My research focuses on generative models, decision making, robot learning, 3D vision and embodied agents.
+            </p>
+            <p>
+            My research is driven by the goal of developing autonomous decision-making agents. My research has primarily focused on the use of generative AI. A major issue in applying generative AI to decision making is the lack a available data to train models. A large body of my work has focuses on addressing this by constructing <a href="https://www.youtube.com/watch?v=As93L2pwR-E">composable generative models</a> using the idea of <a href="https://energy-based-model.github.io/">learning energy landscapes</a> as a means to generalize beyond the narrow amount of data that is available. Such composable models enables <a href="https://energy-based-model.github.io/compositional-generation-inference/">compositional</a> <a href="https://energy-based-model.github.io/Compositional-Visual-Generation-with-Composable-Diffusion-Models"/>visual</a> <a href="https://energy-based-model.github.io/reduce-reuse-recycle/">generation</a> and <a href="https://energy-based-model.github.io/unsupervised-concept-discovery/">compositional</a> <a href="https://energy-based-model.github.io/comet/">scene</a> understanding. My work has further focused on how such compositional models can enable the synthesis of new trajectories in <a href="https://anuragajay.github.io/decision-diffuser/">trajectory</a> <a href="https://arxiv.org/pdf/1909.06878.pdf">planning</a>, enabling <a href="https://diffusion-planning.github.io/">flexible adaptation to novel goals and rewards</a> across both <a href="https://universal-policy.github.io/unipi/">synthesized videos</a> and on the <a href="https://diffusion-policy.cs.columbia.edu/">real robotic settings</a>. Finally, an energy optimization perspective on prediction enables us to combine the strengths of large pretrained models together at prediction time, enabling both <a href="https://hierarchical-planning-foundation-model.github.io/">hierarchical</a> <a href="https://video-language-planning.github.io/">planning</a> and <a href="https://energy-based-model.github.io/composing-pretrained-models-web/">multimodal perception</a>. 
+            More broadly, I am interested in constructing a <a href="https://en.wikipedia.org/wiki/Pandemonium_architecture">decentralized autonomous architecture</a> for decision making, consisting of a <a href="https://github.com/composable-models/llm_multiagent_debate">society</a> of different multimodal models, each with separate responsibilities such as <a href="https://yilundu.github.io/ndf/">3D</a> <a href="https://yilundu.github.io/wide_baseline/">perception</a>, <a href="https://yilundu.github.io/obm">memory</a>, and <a href="https://www.andrew.cmu.edu/user/afluo/Neural_Acoustic_Fields/">auditory understanding</a>, which jointly cooperate to make decisions in an environment. I am further interested in additional techniques to improve generative models such as <a href="https://rl-diffusion.github.io/">reinforcement learning training</a> as well as broader applications of generative models in science such as <a href="https://www.biorxiv.org/content/10.1101/2022.12.21.521521v1">computational</a> <a href="https://arxiv.org/pdf/2004.13167.pdf">biology</a>.
+            </p>
 
-                    <!-- <p>
-                        <strong>Product Manager Intern at Guangzhou Kangxu Tech Co., Ltd</strong> &ensp; Jan 2021 - Feb 2021
+            <h5 class="subtitle">News</h5>
+            <ul>
+                <li>We are organizing a workshop on <a href="https://sites.google.com/view/fmdm-neurips23/">foundation models for decision making</a> at NeurIPS 2023 and I will also help present 7 papers at the main conference. More details soon! </li>
+                <li>I am looking for academic positions this upcoming year! Would love to chat more if you think I would be a good fit for your department.  </li>
+                <li>I gave a recent talk at Nuro summarizing some of my recent works recorded <a href="https://www.youtube.com/watch?v=As93L2pwR-E">here</a>. </li>
+                <li>Check out a list of our work on <a href="https://energy-based-model.github.io/">energy-based models!</a></li>
+            </ul> -->
 
-                        <ul class="less-margin">
-                            <li>
-                                <p >Kangxu Tech is a smart eHealth provider affiliated with the <a href=" http://www.kaxvip.cn/">Kangxu Gruop</a>.</p>
-                            </li>
-                            <li>
-                                <p>
-                                    I primarily worked in the project: Ximeng Hemodialysis Information System and <br>
-                                    also participated in the development of Kangxu E-shopping app
-                                </p>
-                            </li>
-                        </ul>
-                    </p> -->
-                </div>
-            </div>
+            
+
+            <!-- <h5 class="subtitle">Research Highlights</h5>
+            <ul>
+                <li><b>Generative Modeling</b>: constructing generative models of the world's structure which may be combined and adapted. </li>
+                <li><b>Perception and Scene Understanding</b>: inferring structured representations of the world for downstream embodied tasks. </li>
+                <li><b>Interactive Learning</b>: building intelligent agents which may interact in the surrounding world.</li>
+            </ul> -->
         </div>
-    </div>
 
+        <div id="main-pub-container">
+            <h5 class="subtitle">Publications
+            (
+                <a id="publication-by-selected" href="javascript:;", onClick="publicationBySelected();">show selected</a> /
+                <a id="publication-by-date" href="javascript:;", onClick="publicationByDate();">show all by date</a> /
+                <a id="publication-by-topic" href="javascript:;", onClick="publicationByTopic();">show all by topic</a>
+            )
+            </h5>
+            <p class="subtitle-aux"><span class="bold">Topics:</span>
+                <!-- <a href="#topic-generative-model" onClick="return publicationByTopicSpecific(this)" data-topic="generative-model">Generative Modeling</a> / -->
+                <!-- <a href="#topic-perception" onClick="return publicationByTopicSpecific(this)" data-topic="perception">Perception and Scene Understanding</a> -->
+                <a href="#topic-computer-vision" onClick="return publicationByTopicSpecific(this)" data-topic="computer-vision">Computer Vision</a> /
+                <a href="#topic-decision-making" onClick="return publicationByTopicSpecific(this)" data-topic="decision-making">Decision Making</a>
+                <!-- <a href="#topic-rl" onClick="return publicationByTopicSpecific(this)" data-topic="rl">Interactive Learning</a> -->
+                <span class="note">(* indicates equal contribution and <sup>†</sup> indicates equal advising)</span>
+            </p>
 
-
-
-    <!-- =============== -->
-    <!-- Experience -->
-    <div class="container">
-        <div>
-            <div class="row mb-3">
-                <div class="col-12 pt-3  px-4 bubble offset-xl-1 col-xl-10">
-                    <h4>Experience</h4>
-                    <!-- <p style="text-indent: 0px;margin-bottom:0%"> -->
-                    <p>
-                        <strong>University of California, Berkeley</strong>
-                        <br>One semester exchange at EECS, Spring 2020
-                        <br> Core courses: 
-                        <ul class="less-margin">
-                            <li>
-                                <p>CS 170 Efficient Algorithm and Intractable Problems</p>
-                            </li>
-                            <li>
-                                <p>CS 61C Great Ideas in Computer Architecture (Machine Structures)</p>
-                            </li>
-                            <li>
-                                <p>MATH 55 Discrete Mathematics</p>
-                            </li>
-                        </ul>
-
-                        <!-- order: up right bottom left -->
-                        <!-- <div style="margin:0 0 0 15px; padding:0%">
-                            <p style="margin:0 0 0 0; padding:0%">
-                                One semester exchange at EECS Division, Spring 2020 <br> Core courses: <br> CS 170 Efficient Algorithm and Intractable Problems;
-                                <br> CS 61C Great Ideas in Computer Architecture (Machine Structures);
-                                <br> MATH 55 Discrete Mathematics
-                            </p>
-                        </div> -->
-                    </p>
-                    <p>
-                        <strong>National University of Singapore</strong>
-                        <!-- <br> <a href="">Summer workshop at School of Computing, 2019</a> -->
-                        <br> Summer workshop at School of Computing, 2019
-                        <br> Topic: Computational Pearls with Functional Programming, advised by <a href="https://www.comp.nus.edu.sg/cs/bio/henz/">Prof. Martin Henz</a>.
-
-                    </p>
-                    <!-- <img src="pics/exchange/berkeley-exchange.jpg" class="publogo img-fluid rounded g" width="250" <="" a=""> -->
-                    <!-- <img src="pics/exchange/nus-exchange.jpg" class="publogo img-fluid rounded g" width="250" <="" a=""> -->
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Teaching -->
-    <div class="container">
-        <div>
-            <div class="row mb-3">
-                <div class="col-12 pt-3  px-4 bubble offset-xl-1 col-xl-10">
-                    <h4>Teaching</h4>
-                    <p>
-                        <strong>SUSTech CS205 C/C++ Programming, Teaching Assistant</strong>
-                        <br>Fall 2020, instructor: <a href="https://faculty.sustech.edu.cn/yusq/en/">Prof. Shiqi Yu</a>
-                        <br> I taught lab sessions on related programming concepts, language basics and implementation weekly.
-                        <br>I also designed and graded students' homework and projects with instructors.
-                    </p>
-
-                    <p>
-                        <strong>SUSTech CS307 Principles of Database Systems, Teaching Assistant</strong>
-                        <br> Spring 2021, instructor: <a href="https://faculty.sustech.edu.cn/yusq/en/">Prof. Shiqi Yu</a>
-                        <br> My project SQL Online Judge System has been successfully deployed for this course.
-                    </p>
-
-                    <p>
-                        <strong>SUSTech CS102A Introduction to Computer Programming, Teaching Assistant, Fall 2021</strong>
-                        <br>Fall 2021, instructor: <a href="https://jamesyu.me/">Prof. Jianqiao Yu</a>
-                        <br> It is the beginning Computer Science course for all 1st-year students at SUSTech. My job is similar to the CS205 above's, and I am delighted to share what I know with the freshmen.
-                    </p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- ============================================= -->
-    <!-- Projects -->
-    <div class="container">
-        <div>
-            <div class="row mb-3">
-                <div class="col-12 pt-3  px-4 bubble offset-xl-1 col-xl-10">
-                    <h4>Projects</h4>
-
-                    <!-- project start point -->
-                    <!-- 1 -->
-                    <div class="publication media">
-                        <img src="pics/huawei.png" class="publogo img-fluid float-left rounded g" width="150" <="" a="">
-                        <div class="media-body">
-                            <p>
-                                <strong>SafeAI: Robustness of Medical AI Model under Adversarial Attack</strong>
-                                <br> On Adversarial attack and defense of medical images (e.g., <a href="https://challenge2018.isic-archive.com/">ISIC 2018 Dataset</a>).
-                                <br> Funded by Huawei RMS Lab by 1,000,000 RMB.
-                            </p>
+            <div id="main-pub-card-container" class="hide">
+                <div class="pub-card" data-topic="decision-making" data-year="2023" data-selected="true">
+                    <div class="row">
+                        <div class="col-l col-xs-12 col-lg-3">
+                            <img src="data/projects/2023-potential-motion-plan.png" width="100%" playsinline autoplay muted loop preload/>
                         </div>
-                    </div>
-
-                    <!-- 2 -->
-                    <div class="publication media">
-                        <img src="pics/pro_att_unet.jpg" class="publogo img-fluid float-left rounded g" width="150" a="">
-                        <div class="media-body">
-                            <p>
-                                <strong>Probabilistic Attention for Inter-Rater Uncertainty Quantification in Medical Image Segmentation </strong>
-                                <br> Proposed the One Encoder and Multiple Decoder (OMED) network structure with attention gate and variational inference based on U-Net.
-                                <br> Sponsored by Guangdong Pandeng Innovation Fund (广东省攀登计划), 15,000 RMB.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- 3 -->
-                    <div class="publication media">
-                        <img src="pics/sql_platform.png" class="publogo img-fluid float-left rounded g" width="150" a="">
-                        <div class="media-body">
-                            <p>
-                                <strong>SQL Script Online Judge Platform </strong>
-                                <br> A homework submission and grading website for SUSTech CS307 Principles of Database Systems.
-                                <br> Designed and Implemented by our team: Yunhao Luo, Jiahong Xiang, and Taoyue Zhang.
-                                <br> SpringBoot as the backend and React as the frontend.
-                                
-                                <!-- <br><span class="links">
-                                    <a href="javascript:toggleContent('pdemo_btn_id_1', 'project_demo_id_1', 'Collapse', 'Demo')" id="pdemo_btn_id_1">Demo</a><br/>
+                        <div class="col-r col-xs-12 col-lg-9">
+                            <div class="pub-card-body">
+                                <h5 class="title">Potential Based Diffusion Motion Planning </h5>
+                                <h6 class="authors">
+                                    <u>Yunhao Luo</u>,
+                                    <a href="http://chensun.me/">Chen Sun</a>,
+                                    <a href="http://cocosci.mit.edu/josh">Joshua B. Tenenbaum</a>,
+                                    <a href="https://yilundu.github.io/">Yilun Du</a>
+                                </h6>
+                                <p class="info">
+                                    <span class="conference">Under Review</span>
+                                    <!-- <a href="https://video-language-planning.github.io/">Website</a> / -->
+                                    <!-- <a href="https://openreview.net/forum?id=1uHTIjXjkk">Paper</a> -->
+                                    <!-- / <a href="https://github.com/video-language-planning/vlp_code">Code</a>  -->
                                     <br>
-                                    <div class="project_demo" style="display: none" id="project_demo_id_1">
-                                        <img src="pics/proj/re2-f.gif" class="publogo img-fluid float-left rounded g" width="400" a="">
-                                        <br>
-                                        <br>
-                                    </div>
-                                </span> -->
-                                
-                            </p>
+                                    <!-- <br> -->
+                                </p>
+                            </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- 4 -->
-                    <!-- <div class="publication media">
-                        <img src="pics/proj/miss_modality.jpg" class="publogo img-fluid float-left rounded g" width="150" a="">
-                        <div class="media-body">
-                            <p>
-                                <strong>Missing Modality in Brain Tumor Segmentation</strong>
-                                <br> Try to solve the problem when some modalities of CT images are missing during validation.
-                                <br>
-                            </p>
+
+                <div class="pub-card" data-topic="computer-vision" data-year="2023" data-selected="true">
+                    <div class="row">
+                        <div class="col-l col-xs-12 col-lg-3">
+                            <img src="data/projects/2022-colearn.png" width="100%" playsinline autoplay muted loop preload/>
                         </div>
-                    </div> -->
-
-
-                    <!-- <div class="publication media">
-                        <div class="media-body">
-                            <img src="pics/cs230.jpg" class="publogo img-fluid float-left rounded g" width="120" <="" a="">
-                            <p><strong>Tackling Occlusion in Person Re-identification</strong><br> CS230: Deep Learning<br> with Soutik Chakraborty and Pragya Mishra. <br>
-                                <span class="links">
-			      <a href="docs/cs230_report.pdf">Report</a>
-                              <a href="docs/cs230_poster.pdf">Poster</a>
-                              </span>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="publication media">
-                        <div class="media-body">
-                            <img src="pics/cs224n.png" class="publogo img-fluid float-left rounded g" width="120" <="" a="">
-                            <p><strong>Question Answering on SQuAD2.0</strong><br> CS224n: Natural Language Processing with Deep Learning<br> with Gael Colas and Shervine Amidi. <br>
-                                <span class="links">
-			      <a href="docs/cs224n_report.pdf">Report</a>
-                              <a href="docs/cs224n_poster.pdf">Poster</a>
-                              </span>
-                            </p>
+                        <div class="col-r col-xs-12 col-lg-9">
+                            <div class="pub-card-body">
+                                <h5 class="title">A Good Student is Cooperative and Reliable: CNN-Transformer Collaborative Learning for Semantic Segmentation</h5>
+                                <h6 class="authors">
+                                    <a href="https://scholar.google.com/citations?user=EVpo9eQAAAAJ&hl=en">Jinjing Zhu</a>,
+                                    <u>Yunhao Luo</u>,
+                                    <a href="https://zhengxujosh.github.io/">Xu Zheng</a>,
+                                    <a href="https://scholar.google.com/citations?user=N4rQYDAAAAAJ&hl=en">Hao Wang</a>,
+                                    <a href="https://scholar.google.com/citations?user=SReb2csAAAAJ&hl=en">Lin Wang</a>
+                                </h6>
+                                <p class="info">
+                                    <span class="conference">ICCV 2023</span> /
+                                    <!-- <a href="https://video-adapter.github.io/video-adapter/">Website</a> / -->
+                                    <a href="https://arxiv.org/abs/2307.12574">Paper</a> 
+                                </p>
+                            </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="publication media">
-                        <div class="media-body">
-                            <img src="pics/cs229.jpg" class="publogo img-fluid float-left rounded g" width="120" <="" a="">
-                            <p><strong>Predicting NYC Taxi Fares, Trip Distance, and Activity</strong><br> CS229: Machine Learning<br> with Paul Jolly and Varun Nambiar. <br>
-                                <span class="links">
-			      <a href="docs/cs229_report.pdf">Report</a>
-                              <a href="docs/cs229_poster.pdf">Poster</a>
-                              </span>
-                            </p>
+                <div class="pub-card" data-topic="computer-vision" data-year="2023" data-selected="true">
+                    <div class="row">
+                        <div class="col-l col-xs-12 col-lg-3">
+                            <img src="data/projects/2022-DATR.png" width="100%" playsinline autoplay muted loop preload/>
+                        </div>
+                        <div class="col-r col-xs-12 col-lg-9">
+                            <div class="pub-card-body">
+                                <h5 class="title">Look at the Neighbor: Distortion-aware Unsupervised Domain Adaptation for Panoramic Semantic Segmentation</h5>
+                                <h6 class="authors">
+                                    <a href="https://zhengxujosh.github.io/">Xu Zheng</a>,
+                                    <a>Tianbo Pan</a>,
+                                    <u>Yunhao Luo</u>,
+                                    <a href="https://scholar.google.com/citations?user=SReb2csAAAAJ&hl=en">Lin Wang</a>
+                                </h6>
+                                <p class="info">
+                                    <span class="conference">ICCV 2023</span> /
+                                    <a href="https://vlislab22.github.io/DATR/">Website</a> /
+                                    <a href="https://arxiv.org/abs/2308.05493">Paper</a> /
+                                    <a href="https://github.com/zhengxuJosh/DATR">Code</a> 
+                                </p>
+                            </div>
                         </div>
                     </div>
+                </div>
+                
 
-                    <div class="publication media">
-                        <div class="media-body">
-                            <img src="pics/lollipop.png" class="publogo img-fluid float-left rounded g" width="120" <="" a="">
-                            <p><strong>Lollipop: Mobile App for South China University of Technology</strong><br> with 100steps Student Association.<br>
-                            </p>
+
+                <div class="pub-card" data-topic="computer-vision" data-year="2023" data-selected="true">
+                    <div class="row">
+                        <div class="col-l col-xs-12 col-lg-3">
+                            <img src="data/projects/2022-tcc.png" width="100%" playsinline autoplay muted loop preload/>
                         </div>
-                    </div> -->
+                        <div class="col-r col-xs-12 col-lg-9">
+                            <div class="pub-card-body ">
+                                <h5 class="title">Transformer-CNN Cohort: Semi-supervised Semantic Segmentation by the Best of Both Students</h5>
+                                <h6 class="authors">
+                                    <a href="https://zhengxujosh.github.io/">Xu Zheng</a>,
+                                    <u>Yunhao Luo</u>,
+                                    <a href="https://scholar.google.com/citations?hl=zh-CN&user=xq76xEMAAAAJ&view_op=list_works&sortby=pubdate">Chong Fu</a>,
+                                    <a href="https://kangchengliu.github.io/">Kangcheng Liu</a>,
+                                    <a href="https://scholar.google.com/citations?user=SReb2csAAAAJ&hl=en">Lin Wang</a>
+                                </h6>
+                                <p class="info">
+                                    <span class="conference">Under Review</span> /
+                                    <!-- <a href="https://flow-diffusion.github.io/">Website</a> / -->
+                                    <a href="https://arxiv.org/abs/2209.02178">Paper</a>
+                                    <!-- / <a href="https://github.com/flow-diffusion/AVDC">Code</a>  -->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               
+
+                <div class="pub-card" data-topic="computer-vision" data-year="2023" data-selected="true">
+                    <div class="row">
+                        <div class="col-l col-xs-12 col-lg-3">
+                            <img src="data/projects/2022-c2vkd.png" width="100%"/>
+                        </div>
+                        <div class="col-r col-xs-12 col-lg-9">
+                            <div class="pub-card-body">
+                                <h5 class="title">Distilling Efficient Vision Transformers from CNNs for Semantic Segmentation
+                                </h5>
+                                <h6 class="authors">
+                                    <a href="https://zhengxujosh.github.io/">Xu Zheng</a>,
+                                    <u>Yunhao Luo</u>,
+                                    <a href="https://pengyuan-zhou.github.io/">Pengyuan Zhou</a>,
+                                    <a href="https://scholar.google.com/citations?user=SReb2csAAAAJ&hl=en">Lin Wang</a>
+                                </h6>
+                                <p class="info">
+                                    <span class="conference">Under Review</span> /
+                                    <!-- <a href="https://rl-diffusion.github.io/">Website</a> / -->
+                                    <a href="https://arxiv.org/abs/2310.07265">Paper</a> /
+                                    <!-- <a href="https://github.com/jannerm/ddpo">Code</a>  -->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="pub-card" data-topic="computer-vision" data-year="2023" data-selected="true">
+                    <div class="row">
+                        <div class="col-l col-xs-12 col-lg-3">
+                            <img src="data/projects/2022-prior-survey.png" width="100%" playsinline autoplay muted loop preload/>
+                        </div>
+                        <div class="col-r col-xs-12 col-lg-9">
+                            <div class="pub-card-body">
+                                <h5 class="title">Priors in Deep Image Restoration and Enhancement: A Survey</h5>
+                                <h6 class="authors">
+                                    <a href="https://scholar.google.com/citations?user=nPUR_0sAAAAJ&hl=en">Yunfan Lu*</a>,
+                                    <a href="">Yiqi Lin*</a>,
+                                    <a href="">Hao Wu*</a>,
+                                    <u>Yunhao Luo</u>,
+                                    <a href="https://zhengxujosh.github.io/">Xu Zheng</a>,
+                                    <a href="https://scholar.google.com/citations?user=cVDF1tkAAAAJ&hl=en">Hui Xiong</a>,
+                                    <a href="https://scholar.google.com/citations?user=SReb2csAAAAJ&hl=en">Lin Wang</a>
+                                </h6>
+                                <p class="info">
+                                    <span class="conference">Under Review</span> /
+                                    <a href="https://arxiv.org/abs/2206.02070">Paper</a> /
+                                    <a href="https://github.com/yunfanLu/Awesome-Image-Prior">Awesome-Image-Prior</a> 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="pub-card" data-topic="computer-vision" data-year="2023" data-selected="true">
+                    <div class="row">
+                        <div class="col-l col-xs-12 col-lg-3">
+                            <img src="data/projects/2022-interRater.png" width="100%" none/>
+                        </div>
+                        <div class="col-r col-xs-12 col-lg-9">
+                            <div class="pub-card-body">
+                                <h5 class="title">Inter-Rater Uncertainty Quantification in Medical Image Segmentation via Rater-Specific Bayesian Neural Networks</h5>
+                                <h6 class="authors">
+                                    <a href="">Qingqiao Hu*</a>,
+                                    <a href="">Hao Wang*</a>,
+                                    <a href="">Jing Luo</a>,
+                                    <u>Yunhao Luo</u>,
+
+                                    <a href="http://www.mit.edu/~lishuang/">Shuang Li</a>,
+                                    <a href="https://scholar.google.com/citations?user=KkpEXpsAAAAJ&hl=en">Abhi Gupta</a>,
+                                    <a href="http://people.csail.mit.edu/tommi/">Tommi Jaakkola</a>,
+                                    <a href="http://cocosci.mit.edu/josh">Joshua B. Tenenbaum</a>,
+                                    <a href="https://people.csail.mit.edu/lpk/">Leslie Kaelbling</a>,
+                                    <a href="https://akashgit.github.io/">Akash Srivastava</a>,
+                                    <a href="https://people.csail.mit.edu/pulkitag/">Pulkit Agrawal</a>
+                                </h6>
+                                <p class="info">
+                                    <a class="conference">Under Review</a> /
+                                    <!-- <a href="https://hierarchical-planning-foundation-model.github.io/">Website</a> / -->
+                                    <a href="https://arxiv.org/abs/2306.16556">Paper</a> /
+                                    <a href="https://github.com/HaoWang420/bOEMD-net">Code</a> 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
 
 
 
-                    <!-- project end point -->
+            </div>
+        </div>
+        <!-- <div id=""> -->
+        <!-- </div> -->
+
+        <div id="main-pub-container">
+            <h5 class="subtitle">Experience</h5>
+
+            <div id="main-pub-card-container">
+                <div class="pub-card" data-topic="experience" data-selected="False">
+                    <div class="row">
+                        <div class="col-l col-xs-12 col-lg-3">
+                            <img src="data/2021-tencent-logo.png" width="100%" playsinline autoplay muted loop preload/>
+                        </div>
+                        <div class="col-r col-xs-12 col-lg-9">
+                            <div class="pub-card-body">
+                                <h5 class="title">Software Engineer Intern, Tencent</h5>
+                                Jul 2021 -- Sep 2021
+                                <!-- <h6 class="authors">
+                                </h6> -->
+                                <p class="info">
+                                    Worked for WeCom, a communication platform for enterprises with 180M+ active users, mobile app development team. Implemented 10+ features for user access control logics. User interface design, code refactoring. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-card" data-topic="experience" data-selected="False">
+                    <div class="row">
+                        <div class="col-l col-xs-12 col-lg-3">
+                            <img src="data/2020-UCB-logo-s.png" width="100%" playsinline autoplay muted loop preload/>
+                        </div>
+                        <div class="col-r col-xs-12 col-lg-9">
+                            <div class="pub-card-body">
+                                <h5 class="title">Exchange Student, UC Berkeley</h5>
+                                Jan 2020 -- May 2020 <!-- , Spring Semester -->
+                                <p class="info">
+                                    CS 170: Efficient Algorithms and Intractable Problems <br>
+                                    CS 61C: Great Ideas in Computer Architecture (Machine Structures) <br>
+                                    Math 55: Discrete Mathematics
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-card" data-topic="experience" data-selected="False">
+                    <div class="row">
+                        <div class="col-l col-xs-12 col-lg-3">
+                            <img src="data/2019-NUS-log.png" width="100%" playsinline autoplay muted loop preload/>
+                        </div>
+                        <div class="col-r col-xs-12 col-lg-9">
+                            <div class="pub-card-body">
+                                <!-- <br> -->
+                                <h5 class="title">Summer Workshop, National University of Singapore</h5>
+                                Jul 2019 -- Aug 2019
+                                <p class="info">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            
+
+
+
+
+
+
+            <!-- LuoCustom Personal Misc -->
+            <h5 class="subtitle">Misc</h5>
+            <ul>
+                <li> I enjoy playing basketball. Here are some of my lovely teammates.
+                    <!-- <div class="col-l col-xs-12 col-lg-5"> -->
+                    <div class="image-container">
+                    <img src="images/misc/nike-basketball.jpg" width="30%" playsinline autoplay muted loop preload/>
+                    <img src="images/misc/basketball-2.jpg" width="30%" playsinline autoplay muted loop preload/>
+                    </div>  
+                <!-- </div> -->
+                </li>
+                <li>I love track and field, especially middle-distance running. I participate in amateur events occasionally. 
+                    <div class="image-container">
+                        <img src="images/misc/school-running-event-1.jpeg" width="30%" playsinline autoplay muted loop preload/>
+                        <img src="images/misc/school-running-event-2.jpg" width="30%" playsinline autoplay muted loop preload/>
+                    </div> 
+                </li>
+                <li>I started to play the <a href="https://en.wikipedia.org/wiki/Dizi_(instrument)">flute (Dizi)</a> when I was 8. I also played in my college's orchestra.
+                    <div class="image-container">
+                        <img src="images/misc/music-child.jpg" width="30%" playsinline autoplay muted loop preload/>
+                        <img src="images/misc/music-Zhiren-orchestra-2.jpg" width="30%" playsinline autoplay muted loop preload/>
+                    </div> 
+                </li>
+                <li> I'm from <a href="https://goo.gl/maps/LN9VZD6o18X4vyuC7">Guangzhou</a>, a city with lots of tasty food.
+                </li>
+                <br>
+            </ul>
+        </div>
+    </div>
+    <!-- <div id="main-more-container">        
+    </div> -->
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="copyright">
+                    Background photo: Blue Spaces. Website template from <a href="https://jiayuanm.com/">Jiayuan Mao</a>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Misc -->
-    <div class="container">
-        <div>
-            <div class="row mt-3 mb-3">
-                <div class="col-12 pt-3  px-4 bubble offset-xl-1 col-xl-10" id='misc' href="#loc_misc">
-                    <h4>Misc</h4>
-                    <ul>
-                        <li>
-                            <p> I'm from <a href="https://goo.gl/maps/LN9VZD6o18X4vyuC7">Guangzhou</a>, a lovely city in South China with a bunch of fantastic food. </p>
-                            <br>
-                        </li>
-                        <li>
-                            <p> I am keen on playing music &#x1F3b5 and I started to play <a href="https://en.wikipedia.org/wiki/Bamboo_flute">Bamboo Flute </a> when I was eight :P. </p> <br> 
-                            <p> I played for the woodwind section of SUSTech Zhiren Traditional Orchestra. </p>
-                            <!-- We hold
-                            <a href="https://newshub.sustech.edu.cn/html/201906/15992.html">amazing concerts </a>frequently. &#x2B07
-                            <br>
-                            <img src="pics/misc/Zhiren-orchestra-2.jpg" class="publogo img-fluid left  rounded g" width="300" a="" style="margin: 15px">
-                            <img src="pics/misc/Zhiren-orchestra.jpg" class="publogo img-fluid left  rounded g" width="300" a="" style="margin: 15px"><br> -->
-                        </li>
-                        <li>
-                            <p> I enjoy playing basketball &#x1F3C0 and I am also a member of college varsity team. In high school, our team won <a href="http://www.hsfz.net.cn/homepage/article_display.jsp?id=4693">the fifth place</a> in 2016 Nike League
-                                Championship, Guangzhou.</p>
-                            <!-- <br><img src="pics/misc/nike-league.jpg" class="publogo img-fluid left  rounded g" width="300" a="" style="margin: 15px"><br> -->
-                        </li>
-                        <li>
-                            <p> I am a photography enthusiast &#x1F4F8. I was a photographer and administrative assistant at the SUSTech Student Press from 2018 to 2020.</p>
-                        </li>
-
-                        <!-- <li> -->
-                            <!-- <p> I love learning new languages; it's fun to express myself in many interesting ways. I can speak Mandarin, English, Cantonese, and a little German.</p> -->
-                        <!-- </li> -->
-                        <!-- <li>
-                            <p> I love traveling. I maintain a <a href="https://goo.gl/maps/kFddcxmx5UCtaVD76">Places I've Visited</a> map. Looking forward to exploring the rest of the world! </p>
-                        </li> -->
-
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+</div>
 
 
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-    <div style="width: 180px; margin-left: 70%;">
-        <br/>
-        <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=X0KlR1sYZLmuK100EgjaEBUHEiDF1avfvKbmwMzu1Uk&cl=ffffff&w=a"></script>
-        <!-- <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=m&d=pcCUE7o3Z2-Zorc1m0-XP1k1DtR2Ul8xnNTfSwhOfqw"></script> -->
-    </div>
-    <!-- text-indent:3em;  -->
-    <div style="margin-left: 70%;" id='modify_log'>
-        <p>Last updated: Oct 26th, 2022</p>
-        <br/>
-    </div>
+<!-- -------------------------------------------- -->
+<!-- -------------------------------------------- -->
+<!-- -------------------------------------------- -->
 
+
+
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script type="text/javascript" src="static/js/jquery.color.min.js"></script>
+<script type="text/javascript">
+
+$.fn.isInViewport = function() {
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+
+var allPublications = null;
+
+function publicationBySelected() {
+    var a = $("#publication-by-selected")
+    if (a.hasClass("activated")) {
+        return ;
+    }
+
+    $("#main-pub-container .subtitle a").removeClass("activated");
+    $("#main-pub-container .subtitle-aux a").removeClass("activated");
+    a.addClass("activated");
+
+    $("#main-pub-card-container").html("");
+    for (var pubId = 0; pubId < allPublications.length; pubId++) {
+        var pub = $(allPublications[pubId]);
+        if (pub.data("selected") == true) {
+            $("#main-pub-card-container").append(pub);
+        }
+    }
+}
+
+function publicationByDate() {
+    var a = $("#publication-by-date")
+    if (a.hasClass("activated")) {
+        return ;
+    }
+
+    $("#main-pub-container .subtitle a").removeClass("activated");
+    $("#main-pub-container .subtitle-aux a").removeClass("activated");
+    a.addClass("activated");
+
+    $("#main-pub-card-container").html("");
+    for (var pubId = 0; pubId < allPublications.length; pubId++) {
+        if (pubId == 0 || $(allPublications[pubId-1]).data("year") != $(allPublications[pubId]).data("year")) {
+            var year = $(allPublications[pubId]).data("year");
+            $("#main-pub-card-container").append($("<h5 id='year-" + year.toString() + "'>" + year.toString() + "</h5>"));
+        }
+        $("#main-pub-card-container").append(allPublications[pubId]);
+    }
+}
+
+function publicationByTopicInner() {
+    var a = $("#publication-by-topic")
+    if (a.hasClass("activated")) {
+        return ;
+    }
+    $("#main-pub-container .subtitle a").removeClass("activated");
+    a.addClass("activated");
+
+    $("#main-pub-card-container").html("");
+    for (var topicId in allTopics) {
+        var topic = allTopics[topicId].name;
+        var topicTitle = allTopics[topicId].title;
+        // var topicTitle = topic.split("-").map(function (a) { return a[0].toUpperCase() + a.substr(1).toLowerCase(); }).join(" ");
+        $("#main-pub-card-container").append($("<h5 id='topic-" + topic + "'>" + topicTitle + "</h5>"));
+        for (var pubId = 0; pubId < allPublications.length; pubId++) {
+            var pub = $(allPublications[pubId]);
+            if (pub.data("topic").indexOf(topic) != -1) {
+                $("#main-pub-card-container").append(pub);
+            }
+        }
+    }
+}
+
+function publicationByTopicSpecificInner(a) {
+    if ($(a).hasClass("activated")) {
+        return false;
+    }
+
+    $("#main-pub-container .subtitle-aux a").removeClass("activated");
+    $(a).addClass("activated");
+}
+
+function publicationByTopic() {
+    publicationByTopicInner();
+    publicationByTopicSpecificInner($("#main-pub-container .subtitle-aux a:first"));
+    return true;
+}
+
+function publicationByTopicSpecific(a) {
+    publicationByTopicInner();
+    publicationByTopicSpecificInner(a);
+
+    var hash = a.hash;
+    $(hash).prop('id', hash.substr(1) + '-noscroll');
+    window.location.hash = hash;
+    $(hash + '-noscroll').prop('id', hash.substr(1));
+
+    if (!$(hash).isInViewport()) {
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 1000, function(){
+        });
+    }
+
+    return false;
+}
+
+$(function() {
+    getRealSize = function(bgImg) {
+        var img = new Image();
+        img.src = bgImg.attr("src");
+        var width = img.width,
+            height = img.height;
+        return {
+            width: width,
+            height: height
+        }
+    };
+
+    getRealWindowSize = function() {
+        var winWidth = null,
+            winHeight = null;
+        if (window.innerWidth) winWidth = window.innerWidth;
+        else if ((document.body) && (document.body.clientWidth)) winWidth = document.body.clientWidth;
+        if (window.innerHeight) winHeight = window.innerHeight;
+        else if ((document.body) && (document.body.clientHeight)) winHeight = document.body.clientHeight;
+        if (document.documentElement && document.documentElement.clientHeight && document.documentElement.clientWidth) {
+            winHeight = document.documentElement.clientHeight;
+            winWidth = document.documentElement.clientWidth
+        }
+        return {
+            width: winWidth,
+            height: winHeight
+        }
+    };
+
+    fullBg = function() {
+        var bgImg = $("#background");
+        var mainContainer = $("#main");
+        var firstFire = null;
+
+        function resizeImg() {
+            var realSize = getRealSize(bgImg);
+            var imgWidth = realSize.width;
+            var imgHeight = realSize.height;
+
+            if (imgWidth == 0 || imgHeight == 0) {
+                setTimeout(function() {
+                    resizeImg();
+                }, 200);
+            }
+
+            console.log(realSize);
+            var realWinSize = getRealWindowSize();
+            var winWidth = realWinSize.width;
+            var winHeight = realWinSize.height;
+            var widthRatio = winWidth / imgWidth;
+            var heightRatio = winHeight / imgHeight;
+            console.log(realWinSize);
+            if (widthRatio > heightRatio) {
+                bgImg.width(imgWidth * widthRatio + 'px').height(imgHeight * widthRatio + 'px').css({'top':
+                    -(imgHeight * widthRatio - winHeight) / 10 * 5 + 'px', 'left': '0'})
+            } else {
+                bgImg.width(imgWidth * heightRatio + 'px').height(imgHeight * heightRatio + 'px').css({'left':
+                    -(imgWidth * heightRatio - winWidth) / 10 * 3 + 'px', 'top': '0'})
+            }
+            // mainContainer.css({
+            //     width: winWidth,
+            //     height: winHeight
+            // });
+        }
+
+        resizeImg();
+        window.onresize = function() {
+            if (firstFire === null) {
+                firstFire = setTimeout(function() {
+                    resizeImg();
+                    firstFire = null
+                }, 100)
+            }
+        }
+    };
+
+    targetColor = $("#main-content-container .col-info .name").css("color");
+    animatedLink = function(speed) {
+        $("#main-content-container .col-link li").hover(function() {
+            $(this).find('.icon').animate({
+                color: targetColor,
+                borderColor: targetColor
+            }, speed);
+            $(this).find('.caption').animate({
+                color: targetColor
+            })
+        }, function() {
+            $(this).find('.icon').animate({
+                borderColor: '#cccccc',
+                color: '#cccccc'
+            }, speed);
+            $(this).find('.caption').animate({
+                color: '#cccccc'
+            })
+        })
+    };
+
+    fullBg();
+    animatedLink(400);
+
+    allPublications = $("#main-pub-card-container .pub-card");
+    allTopicsLink = $("#main-pub-container .subtitle-aux a");
+    allTopics = [];
+    for (var topicId = 0; topicId < allTopicsLink.length; topicId++) {
+        allTopics.push({name: $(allTopicsLink[topicId]).data("topic"), title: $(allTopicsLink[topicId]).html()});
+    }
+
+    $("#publication-by-selected").click();
+    // $("#publication-by-date").click();
+    $("#main-pub-card-container").removeClass("hide");
+});
+</script>
 </body>
-
 </html>
